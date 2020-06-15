@@ -35,7 +35,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   var subtitles = <String>["Flutter", "Google developments"];
-  List<int> subtitlesIndex = [0, 1, 1, 1, 1, 1, 0];
+  List<int> subtitlesIndex = [0, 1, 1, 1, 1, 1, 1, 0];
 
   List<WidgetModel> widgetModels = List();
 

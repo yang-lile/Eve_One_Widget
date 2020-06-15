@@ -1,8 +1,8 @@
-
 import 'package:Eve_One_Widget/main.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
+import 'package:Eve_One_Widget/pages/FutureBuilder.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
@@ -17,6 +17,7 @@ final routes = {
   "/wrap": (context) => WrapDemo(),
   "/animated_container": (context) => AnimatedContainerDemo(),
   "/opacity": (context) => OpacityDemo(),
+  "/future_builder": (context) => FutureBuilderDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

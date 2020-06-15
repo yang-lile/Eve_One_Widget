@@ -8,6 +8,7 @@ enum WidgetNames {
   WRAP,
   ANIMATED_CONTAINER,
   OPACITY,
+  FUTURE_BUILDER,
   ABOUT_DIALOG, // 这里是83
 }
 
