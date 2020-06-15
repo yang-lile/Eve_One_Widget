@@ -14,11 +14,15 @@ class DraggableState extends State<DraggableDemo> {
       ),
       body: Container(
         child: Draggable(
-          feedback: FloatingActionButton(child: Icon(Icons.add),onPressed: (){}),
-          child: FloatingActionButton(child: Icon(Icons.add),onPressed: (){})
-        ), 
+            feedback: FloatingActionButton(
+              child: Icon(Icons.add),
+              onPressed: () {},
+            ),
+            child: FloatingActionButton(
+              child: Icon(Icons.add),
+              onPressed: () {},
+            )),
       ),
     );
   }
-
 }

@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Introduction extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => IntroductionState();
-}
-
-class IntroductionState extends State<Introduction> {
+class Introduction extends StatelessWidget {
   final TextStyle _textStyle = TextStyle(fontSize: 18.0, height: 1.5);
   final TextStyle _head2Style = TextStyle(
     fontSize: 20.0,

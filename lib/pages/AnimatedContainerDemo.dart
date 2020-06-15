@@ -45,7 +45,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
       if (flag) {
         _color = Colors.pink[200];
       } else {
-        _color = Colors.purple[300];
+        _color = Colors.purple[400];
       }
     });
     flag = !flag;
@@ -54,7 +54,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("AnimatedContainer")),
+      appBar: AppBar(title: Text("AnimatedContainerDemo")),
       body: Align(
         alignment: Alignment.center,
         child: AnimatedContainer(

@@ -1,37 +1,20 @@
-
 import 'package:flutter/material.dart';
 
-class SafeAreaDemo extends StatefulWidget {
-
-  @override
-  State<StatefulWidget> createState() => SafeAreaState();
-
-}
-
-class SafeAreaState extends State<SafeAreaDemo> {
+class SafeAreaDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("SafeArea"),
-      ),
-      body: SafeArea(
-        bottom: true,
-        top: true,
-        child: Scrollbar(
-          child: ListView.builder(
-            itemCount: 100,
-            itemBuilder: (context, index) {
-              return Padding(
-                padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
-                child: Text("The text is obscured !", style: TextStyle(fontSize: 20),),
-              );
-            }
-          )
-        )
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("SafeAreaDemo"),
+        ),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text("SafeArea控件在iOS端适配良好，安卓端屏幕尺寸过多，现只展示水滴屏下，水滴被作用的结果"),
+          ],
+        ),
       ),
     );
   }
-
-
 }
