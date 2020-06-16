@@ -3,6 +3,7 @@ import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
+import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
@@ -12,7 +13,7 @@ import 'package:flutter/material.dart';
 
 final routes = {
   "/": (context) => MyHomePage(title: 'Flutter EveOneWidget'),
-  "/introducing": (context) => Introduction(),
+  "/introduction": (context) => Introduction(),
   "/safe_area": (context) => SafeAreaDemo(),
   "/expanded": (context) => ExpandedDemo(),
   "/wrap": (context) => WrapDemo(),
@@ -20,6 +21,7 @@ final routes = {
   "/opacity": (context) => OpacityDemo(),
   "/future_builder": (context) => FutureBuilderDemo(),
   "/fade_transition": (context) => FadeTransitionDemo(),
+  "/floating_action_button": (context) => FloatingActionButtonDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

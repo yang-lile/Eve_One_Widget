@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<int> subtitlesIndex = [
     2, // 介绍
     0, 0, 0, 1, 1, // 1-5
-    0, 1, // 6-10
+    0, 1, 0, // 6-10
     0, // 83
   ];
 
@@ -89,14 +89,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Container _buildListElement(int index) {
     return Container(
-      padding: EdgeInsets.only(left: 8.0, top: 10, right: 16.0, bottom: 10),
+      padding: EdgeInsets.only(left: 0.0, top: 10, right: 16.0, bottom: 10),
       child: Row(
         children: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(right: 8.0),
+          Container(
+            width: 30.0,
             child: Text(
               (1 + index).toString(),
-              style: TextStyle(fontSize: 14, color: Colors.grey),
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey,
+              ),
             ),
           ),
           Hero(
