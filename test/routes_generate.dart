@@ -6,9 +6,9 @@ enum WidgetNames {
   ANIMATED_CONTAINER,
   OPACITY,
   FUTURE_BUILDER,
+  FADE_TRANSITION,
   ABOUT_DIALOG, // 这里是83
 }
-
 main(List<String> args) {
   for (var i in WidgetNames.values) {
     String s = i.toString().toLowerCase().split('.').last;

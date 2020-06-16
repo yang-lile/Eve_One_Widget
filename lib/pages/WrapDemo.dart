@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class WrapDemo extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => WrapState();
-}
-
-class WrapState extends State<WrapDemo> {
+class WrapDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

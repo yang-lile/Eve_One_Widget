@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FutureBuilderDemo extends StatefulWidget {
-  @override
-  _FutureBuilderDemoState createState() => _FutureBuilderDemoState();
-}
-
-class _FutureBuilderDemoState extends State<FutureBuilderDemo> {
+class FutureBuilderDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,10 +16,10 @@ class _FutureBuilderDemoState extends State<FutureBuilderDemo> {
 
   _myData() {
     return FutureBuilder(
-      future: Future.delayed(Duration(seconds: 3), () => 999999),
+      future: Future.delayed(Duration(seconds: 3), () => "没联网"),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          return Text("一刀${snapshot.data}");
+          return Text("今天的天气是：${snapshot.data}");
         } else {
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,

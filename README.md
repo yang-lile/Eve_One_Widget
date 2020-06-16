@@ -9,6 +9,8 @@
 3. Wrap
 4. AnimatedContainer
 5. Opacity
+6. FutureBuilder
+7. FadeTransition
 83. AboutDialog
 
 ## 每次更新需要修改的位置
