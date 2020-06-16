@@ -1,12 +1,11 @@
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class WrapDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("WrapDemo"),
-      ),
+    return MyScaffold(
+      appBarTitle: "WrapDemo",
       body: Container(
         alignment: Alignment.center,
         child: Column(

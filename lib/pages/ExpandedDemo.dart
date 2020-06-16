@@ -1,12 +1,11 @@
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class ExpandedDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("ExpandedDemo"),
-      ),
+    return MyScaffold(
+      appBarTitle: "ExpandedDemo",
       body: Container(
         child: Center(
             child: Column(

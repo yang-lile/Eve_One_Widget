@@ -13,14 +13,14 @@ import 'package:flutter/material.dart';
 final routes = {
   "/": (context) => MyHomePage(title: 'Flutter EveOneWidget'),
   "/introducing": (context) => Introduction(),
-  "/safe_area" : (context) => SafeAreaDemo(),
-"/expanded" : (context) => ExpandedDemo(),
-"/wrap" : (context) => WrapDemo(),
-"/animated_container" : (context) => AnimatedContainerDemo(),
-"/opacity" : (context) => OpacityDemo(),
-"/future_builder" : (context) => FutureBuilderDemo(),
-"/fade_transition" : (context) => FadeTransitionDemo(),
-"/about_dialog" : (context) => AboutDialogDemo(),
+  "/safe_area": (context) => SafeAreaDemo(),
+  "/expanded": (context) => ExpandedDemo(),
+  "/wrap": (context) => WrapDemo(),
+  "/animated_container": (context) => AnimatedContainerDemo(),
+  "/opacity": (context) => OpacityDemo(),
+  "/future_builder": (context) => FutureBuilderDemo(),
+  "/fade_transition": (context) => FadeTransitionDemo(),
+  "/about_dialog": (context) => AboutDialogDemo(),
 };
 
 //固定写法

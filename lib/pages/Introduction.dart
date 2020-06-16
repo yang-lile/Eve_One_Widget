@@ -24,7 +24,7 @@ class Introduction extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Hero(
-              tag: "hero0",
+              tag: "image0",
               child: Image.asset(
                 "assets/images/introducing.webp",
                 fit: BoxFit.contain,

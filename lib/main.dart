@@ -34,7 +34,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var subtitles = <String>["Stateless Widget", "Stateful Widget", "introducing"];
+  var subtitles = <String>[
+    "Stateless Widget",
+    "Stateful Widget",
+    "introducing"
+  ];
   List<int> subtitlesIndex = [
     2, // 介绍
     0, 0, 0, 1, 1, // 1-5
@@ -96,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Hero(
-            tag: "hero" + index.toString(),
+            tag: "image" + index.toString(),
             child: Image.asset(
               this.widgetModels[index].image,
               width: 120,
@@ -109,9 +113,13 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(left: 16.0, bottom: 10.0),
-                  child: Text(
-                    this.widgetModels[index].title,
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  child: Hero(
+                    tag: this.widgetModels[index].title,
+                    child: Text(
+                      this.widgetModels[index].title,
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
                   ),
                 ),
                 Padding(

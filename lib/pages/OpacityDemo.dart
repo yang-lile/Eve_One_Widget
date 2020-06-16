@@ -1,6 +1,7 @@
 /// 视频中演示了Opacity，十分简单，设置opacity为0即可
 /// 我们来实现AnimatedOpacity
 
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class OpacityDemo extends StatefulWidget {
@@ -19,10 +20,8 @@ class OpacityState extends State<OpacityDemo> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("OpacityDemo"),
-      ),
+    return MyScaffold(
+      appBarTitle: "OpacityDemo",
       body: Align(
         alignment: Alignment.center,
         child: Column(

@@ -26,6 +26,7 @@
 /// 你也可以指定一个非线性的自定义效果。
 /// 这就是balabalabala。。。
 
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedContainerDemo extends StatefulWidget {
@@ -53,8 +54,8 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("AnimatedContainerDemo")),
+    return MyScaffold(
+      appBarTitle: "AnimatedContainerDemo",
       body: Align(
         alignment: Alignment.center,
         child: AnimatedContainer(

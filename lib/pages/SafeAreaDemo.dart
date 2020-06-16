@@ -1,13 +1,12 @@
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class SafeAreaDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text("SafeAreaDemo"),
-        ),
+      child: MyScaffold(
+        appBarTitle: "SafeAreaDemo",
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[

@@ -1,13 +1,14 @@
 /// 主要用于专场动画，
 /// 你可以直接复制粘贴FadeTransionDemoModel来修改属于你的转场动画
 
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class FadeTransitionDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("FadeTransitionDemo")),
+    return MyScaffold(
+      appBarTitle: "FadeTransitionDemo",
       body: Align(
         alignment: Alignment.center,
         child: FadeTransitionDemoModel(
