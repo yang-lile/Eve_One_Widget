@@ -41,7 +41,7 @@ class MyScaffold extends StatelessWidget {
 }
 
 class SourceCodePage extends StatelessWidget {
-  String title;
+  final String title;
 
   SourceCodePage({
     @required this.title,
@@ -98,7 +98,6 @@ class MyFadeTransition1 extends StatefulWidget {
 class _MyFadeTransition1State extends State<MyFadeTransition1>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
-  Animation _animation;
 
   @override
   void initState() {
@@ -107,7 +106,7 @@ class _MyFadeTransition1State extends State<MyFadeTransition1>
       duration: Duration(milliseconds: 500),
       vsync: this,
     );
-    _animation = Tween(
+    Tween(
       begin: 0.0,
       end: 1.0,
     ).animate(_controller);

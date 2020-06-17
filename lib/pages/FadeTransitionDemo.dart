@@ -36,7 +36,6 @@ class FadeTransitionDemoModel extends StatefulWidget {
 class _FadeTransitionDemoModelState extends State<FadeTransitionDemoModel>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
-  Animation _animation;
 
   @override
   void initState() {
@@ -45,7 +44,7 @@ class _FadeTransitionDemoModelState extends State<FadeTransitionDemoModel>
       duration: Duration(seconds: 2),
       vsync: this,
     );
-    _animation = Tween(
+    Tween(
       begin: 0.0,
       end: 1.0,
     ).animate(_controller);

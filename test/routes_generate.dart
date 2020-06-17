@@ -1,6 +1,5 @@
 // 将枚举类型复制过来，去除掉introduction然后将生成的结果复制到Routes的routes里
 enum WidgetNames {
-  INTRODUCING,
   SAFE_AREA,
   EXPANDED,
   WRAP,
@@ -9,6 +8,7 @@ enum WidgetNames {
   FUTURE_BUILDER,
   FADE_TRANSITION,
   FLOATING_ACTION_BUTTON,
+  PAGE_VIEW,
   ABOUT_DIALOG, // 这里是83
 }
 main(List<String> args) {
