@@ -12,6 +12,7 @@ enum WidgetNames {
   FADE_TRANSITION,
   FLOATING_ACTION_BUTTON,
   PAGE_VIEW,
+  TABLE,
   ABOUT_DIALOG, // 这里是83
 }
 
