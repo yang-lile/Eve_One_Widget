@@ -13,6 +13,7 @@ enum WidgetNames {
   FLOATING_ACTION_BUTTON,
   PAGE_VIEW,
   TABLE,
+  SLIVER_APP_BAR,
   ABOUT_DIALOG, // 这里是83
 }
 
