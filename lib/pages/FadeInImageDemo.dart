@@ -1,6 +1,5 @@
 import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class FadeInImageDemo extends StatelessWidget {
   @override

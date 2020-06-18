@@ -12,6 +12,7 @@ import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
+import 'package:Eve_One_Widget/pages/StreamBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/TableDemo.dart';
 import 'package:Eve_One_Widget/pages/WrapDemo.dart';
 import 'package:flutter/material.dart';
@@ -30,8 +31,9 @@ final routes = {
   "/page_view": (context) => PageViewDemo(),
   "/table": (context) => TableDemo(),
   "/sliver_app_bar": (context) => SliverAppBarDemo(),
-  "/sliver_list_and_sliver_grid" : (context) => SliverListAndSliverGridDemo(),
-  "/fade_in_image" : (context) => FadeInImageDemo(),
+  "/sliver_list_and_sliver_grid": (context) => SliverListAndSliverGridDemo(),
+  "/fade_in_image": (context) => FadeInImageDemo(),
+  "/stream_builder": (context) => StreamBuilderDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

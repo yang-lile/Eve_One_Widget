@@ -28,4 +28,5 @@
 4. 复制枚举类型`WidgetNames`到`test\routes_generate.dart`里，运行程序，生成字符串到路由的列表，复制到`lib\Routes.dart`下，
 5. 修改`lib\main.dart`里`_MyHomePageState`类里的`subtitlesIndex`子标题属性，注意下标
 
-## 打包注意设置联网权限
+## 打包注意
+1. 设置联网权限
