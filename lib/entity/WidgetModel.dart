@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // 没有找到修改美剧类型值的方法
 enum WidgetNames {
-  INTRODUCING,
+  INTRODUCTION,
   SAFE_AREA,
   EXPANDED,
   WRAP,
@@ -15,6 +15,7 @@ enum WidgetNames {
   TABLE,
   SLIVER_APP_BAR,
   SLIVER_LIST_AND_SLIVER_GRID,
+  FADE_IN_IMAGE,
   ABOUT_DIALOG, // 这里是83
 }
 
@@ -32,7 +33,7 @@ class WidgetModel {
     // 第一个的标题有点长，特殊处理
     switch (widgetNames.index) {
       case 0:
-        return "Introducing Widget of the Week!";
+        return "Introdution Widget of the Week!";
         break;
       default:
         // 转大驼峰命名

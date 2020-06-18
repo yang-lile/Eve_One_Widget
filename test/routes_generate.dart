@@ -1,6 +1,6 @@
 // 将枚举类型复制过来，去除掉introduction然后将生成的结果复制到Routes的routes里
 enum WidgetNames {
-  SLIVER_LIST_AND_SLIVER_GRID,
+  FADE_IN_IMAGE,
   ABOUT_DIALOG, // 这里是83
 }
 main(List<String> args) {

@@ -16,6 +16,7 @@
 10. Table
 11. SliverAppBar
 12. SliverList & SliverGrid
+13. FadeInImage
 83. AboutDialog
 
 ## 每次更新需要修改的位置
@@ -26,3 +27,5 @@
 3. 在`lib\entity\WidgetModel.dart`的`WidgetNames`内添加控件的全大写下划线命名
 4. 复制枚举类型`WidgetNames`到`test\routes_generate.dart`里，运行程序，生成字符串到路由的列表，复制到`lib\Routes.dart`下，
 5. 修改`lib\main.dart`里`_MyHomePageState`类里的`subtitlesIndex`子标题属性，注意下标
+
+## 打包注意设置联网权限

@@ -2,6 +2,7 @@ import 'package:Eve_One_Widget/main.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
+import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
 import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
@@ -30,6 +31,7 @@ final routes = {
   "/table": (context) => TableDemo(),
   "/sliver_app_bar": (context) => SliverAppBarDemo(),
   "/sliver_list_and_sliver_grid" : (context) => SliverListAndSliverGridDemo(),
+  "/fade_in_image" : (context) => FadeInImageDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
