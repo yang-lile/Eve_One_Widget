@@ -1,0 +1,42 @@
+/// https://juejin.im/post/5bceb534e51d457aa4596f9a#heading-3
+/// 一个写的比较好的教程
+/// bug: 滑动到底部无边界，继续滚动
+
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:flutter/material.dart';
+
+class SliverListAndSliverGridDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MyScaffold(
+      appBarTitle: "SliverList & SliverGrid",
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return Container(
+                  color: Colors.blue[index * 100],
+                  height: 110,
+                );
+              },
+              childCount: 7,
+            ),
+          ),
+          SliverGrid(
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return Container(
+                  color: Colors.green[index * 100],
+                  height: 300,
+                );
+              },
+            ),
+            gridDelegate:
+                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+          ),
+        ],
+      ),
+    );
+  }
+}
