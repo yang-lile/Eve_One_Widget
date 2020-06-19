@@ -1,6 +1,7 @@
 import 'package:Eve_One_Widget/main.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
+import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
@@ -36,6 +37,7 @@ final routes = {
   "/fade_in_image": (context) => FadeInImageDemo(),
   "/stream_builder": (context) => StreamBuilderDemo(),
   "/inherited_model": (context) => InheritedModelDemo(),
+  "/clip_r_rect": (context) => ClipRRectDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

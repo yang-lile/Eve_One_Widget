@@ -18,6 +18,7 @@ enum WidgetNames {
   FADE_IN_IMAGE,
   STREAM_BUILDER,
   INHERITED_MODEL,
+  CLIP_R_RECT,
   ABOUT_DIALOG, // 这里是83
 }
 
