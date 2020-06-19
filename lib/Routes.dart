@@ -6,6 +6,7 @@ import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
 import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
+import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
@@ -34,6 +35,7 @@ final routes = {
   "/sliver_list_and_sliver_grid": (context) => SliverListAndSliverGridDemo(),
   "/fade_in_image": (context) => FadeInImageDemo(),
   "/stream_builder": (context) => StreamBuilderDemo(),
+  "/inherited_model": (context) => InheritedModelDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
