@@ -7,6 +7,7 @@ import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
 import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
+import 'package:Eve_One_Widget/pages/HeroDemo.dart';
 import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
@@ -38,6 +39,7 @@ final routes = {
   "/stream_builder": (context) => StreamBuilderDemo(),
   "/inherited_model": (context) => InheritedModelDemo(),
   "/clip_r_rect": (context) => ClipRRectDemo(),
+  "/hero": (context) => HeroDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

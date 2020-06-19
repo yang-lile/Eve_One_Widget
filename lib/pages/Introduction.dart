@@ -26,7 +26,7 @@ class Introduction extends StatelessWidget {
             Hero(
               tag: "image0",
               child: Image.asset(
-                "assets/images/introducing.webp",
+                "assets/images/introduction.webp",
                 fit: BoxFit.contain,
               ),
             ),

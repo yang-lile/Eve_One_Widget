@@ -1,6 +1,7 @@
 // 将枚举类型复制过来，去除掉introduction然后将生成的结果复制到Routes的routes里
 enum WidgetNames {
   CLIP_R_RECT,
+  HERO,
 }
 main(List<String> args) {
   for (var i in WidgetNames.values) {

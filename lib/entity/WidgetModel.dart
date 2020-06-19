@@ -19,6 +19,7 @@ enum WidgetNames {
   STREAM_BUILDER,
   INHERITED_MODEL,
   CLIP_R_RECT,
+  HERO,
   ABOUT_DIALOG, // 这里是83
 }
 
