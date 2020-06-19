@@ -2,6 +2,7 @@ import 'package:Eve_One_Widget/main.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
+import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
@@ -40,6 +41,7 @@ final routes = {
   "/inherited_model": (context) => InheritedModelDemo(),
   "/clip_r_rect": (context) => ClipRRectDemo(),
   "/hero": (context) => HeroDemo(),
+  "/custom_paint": (context) => CustomPaintDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

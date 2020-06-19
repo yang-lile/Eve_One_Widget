@@ -20,6 +20,7 @@ enum WidgetNames {
   INHERITED_MODEL,
   CLIP_R_RECT,
   HERO,
+  CUSTOM_PAINT,
   ABOUT_DIALOG, // 这里是83
 }
 
