@@ -23,6 +23,9 @@
 17. Hero,
 18. CustomPaint,
 19. Tooltip,
+20. FittedBox,
+21. LayoutBuilder,
+22. AbsorbPointer,
 83. AboutDialog
 
 ## 每次更新需要修改的位置

@@ -24,6 +24,7 @@ enum WidgetNames {
   TOOLTIP,
   FITTED_BOX,
   LAYOUT_BUILDER,
+  ABSORB_POINTER,
   ABOUT_DIALOG, // 这里是83
 }
 
