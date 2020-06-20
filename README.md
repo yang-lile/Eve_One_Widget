@@ -20,6 +20,9 @@
 14. StreamBuilder,
 15. InheritedModel,
 16. ClipRRect,
+17. Hero,
+18. CustomPaint,
+19. Tooltip,
 83. AboutDialog
 
 ## 每次更新需要修改的位置

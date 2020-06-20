@@ -21,6 +21,7 @@ enum WidgetNames {
   CLIP_R_RECT,
   HERO,
   CUSTOM_PAINT,
+  TOOLTIP,
   ABOUT_DIALOG, // 这里是83
 }
 

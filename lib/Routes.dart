@@ -18,6 +18,7 @@ import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
 import 'package:Eve_One_Widget/pages/StreamBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/TableDemo.dart';
+import 'package:Eve_One_Widget/pages/TooltipDemo.dart';
 import 'package:Eve_One_Widget/pages/WrapDemo.dart';
 import 'package:flutter/material.dart';
 
@@ -42,6 +43,7 @@ final routes = {
   "/clip_r_rect": (context) => ClipRRectDemo(),
   "/hero": (context) => HeroDemo(),
   "/custom_paint": (context) => CustomPaintDemo(),
+  "/tooltip": (context) => TooltipDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
