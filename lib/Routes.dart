@@ -6,6 +6,7 @@ import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
+import 'package:Eve_One_Widget/pages/FittedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/HeroDemo.dart';
@@ -44,6 +45,7 @@ final routes = {
   "/hero": (context) => HeroDemo(),
   "/custom_paint": (context) => CustomPaintDemo(),
   "/tooltip": (context) => TooltipDemo(),
+  "/fitted_box": (context) => FittedBoxDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

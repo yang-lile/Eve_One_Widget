@@ -22,6 +22,7 @@ enum WidgetNames {
   HERO,
   CUSTOM_PAINT,
   TOOLTIP,
+  FITTED_BOX,
   ABOUT_DIALOG, // 这里是83
 }
 
