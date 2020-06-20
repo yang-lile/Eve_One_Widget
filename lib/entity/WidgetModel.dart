@@ -25,6 +25,7 @@ enum WidgetNames {
   FITTED_BOX,
   LAYOUT_BUILDER,
   ABSORB_POINTER,
+  TRANSFORM,
   ABOUT_DIALOG, // 这里是83
 }
 

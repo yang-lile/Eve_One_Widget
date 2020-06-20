@@ -22,6 +22,7 @@ import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
 import 'package:Eve_One_Widget/pages/StreamBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/TableDemo.dart';
 import 'package:Eve_One_Widget/pages/TooltipDemo.dart';
+import 'package:Eve_One_Widget/pages/TransformDemo.dart';
 import 'package:Eve_One_Widget/pages/WrapDemo.dart';
 import 'package:flutter/material.dart';
 
@@ -50,6 +51,7 @@ final routes = {
   "/fitted_box": (context) => FittedBoxDemo(),
   "/layout_builder": (context) => LayoutBuilderDemo(),
   "/absorb_pointer": (context) => AbsorbPointerDemo(),
+  "/transform": (context) => TransformDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
