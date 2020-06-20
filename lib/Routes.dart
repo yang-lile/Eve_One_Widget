@@ -12,6 +12,7 @@ import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/HeroDemo.dart';
 import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
+import 'package:Eve_One_Widget/pages/LayoutBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
@@ -46,6 +47,7 @@ final routes = {
   "/custom_paint": (context) => CustomPaintDemo(),
   "/tooltip": (context) => TooltipDemo(),
   "/fitted_box": (context) => FittedBoxDemo(),
+  "/layout_builder": (context) => LayoutBuilderDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
