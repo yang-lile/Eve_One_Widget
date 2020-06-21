@@ -26,6 +26,7 @@ enum WidgetNames {
   LAYOUT_BUILDER,
   ABSORB_POINTER,
   TRANSFORM,
+  BACKDROP_FILTER,
   ABOUT_DIALOG, // 这里是83
 }
 

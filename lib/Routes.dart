@@ -2,6 +2,7 @@ import 'package:Eve_One_Widget/main.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AbsorbPointerDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
+import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
 import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
@@ -52,6 +53,7 @@ final routes = {
   "/layout_builder": (context) => LayoutBuilderDemo(),
   "/absorb_pointer": (context) => AbsorbPointerDemo(),
   "/transform": (context) => TransformDemo(),
+  "/backdrop_filter": (context) => BackdropFilterDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
