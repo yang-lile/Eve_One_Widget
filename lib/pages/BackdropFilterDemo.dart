@@ -10,8 +10,26 @@ class BackdropFilterDemo extends StatelessWidget {
         appBarTitle: "BackdropFilter",
         body: Center(
           child: Stack(
+            // 使用Stack实现的遮罩
             alignment: Alignment.center,
             children: <Widget>[
+              Text("0" * 10000),
+              Align(
+                alignment: Alignment(0, -0.8),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(
+                    sigmaX: 1.5,
+                    sigmaY: 1.5,
+                  ),
+                  child: Container(
+                    alignment: Alignment.center,
+                    width: 200,
+                    height: 200,
+                    color: Colors.white54,
+                    child: Text("毫无意义的遮罩"),
+                  ),
+                ),
+              ),
               Image.asset("assets/images/backdrop_filter.webp"),
               ClipRRect(
                 child: Container(
@@ -31,7 +49,7 @@ class BackdropFilterDemo extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ));

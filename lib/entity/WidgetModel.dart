@@ -27,6 +27,7 @@ enum WidgetNames {
   ABSORB_POINTER,
   TRANSFORM,
   BACKDROP_FILTER,
+  ALIGN,
   ABOUT_DIALOG, // 这里是83
 }
 
