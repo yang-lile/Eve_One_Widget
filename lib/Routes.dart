@@ -2,6 +2,7 @@ import 'package:Eve_One_Widget/main.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AbsorbPointerDemo.dart';
 import 'package:Eve_One_Widget/pages/AlignDemo.dart';
+import 'package:Eve_One_Widget/pages/AnimatedBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
@@ -18,6 +19,7 @@ import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/LayoutBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
+import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
@@ -56,6 +58,8 @@ final routes = {
   "/transform": (context) => TransformDemo(),
   "/backdrop_filter": (context) => BackdropFilterDemo(),
   "/align": (context) => AlignDemo(),
+  "/positioned": (context) => PositionedDemo(),
+  "/animated_builder": (context) => AnimatedBuilderDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

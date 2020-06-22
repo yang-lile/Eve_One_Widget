@@ -28,6 +28,8 @@ enum WidgetNames {
   TRANSFORM,
   BACKDROP_FILTER,
   ALIGN,
+  POSITIONED,
+  ANIMATED_BUILDER,
   ABOUT_DIALOG, // 这里是83
 }
 
