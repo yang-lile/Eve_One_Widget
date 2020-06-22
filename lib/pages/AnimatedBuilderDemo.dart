@@ -38,15 +38,17 @@ class __MyAnimatedState extends State<_MyAnimated>
     );
     animation =
         Tween(begin: 0.0, end: pi * 2.0).animate(controller) // 生成旋转360度的值
-          ..addStatusListener((status) {
-            if (status == AnimationStatus.completed) {
-              // 如果完成了，就反转动画
-              controller.reverse();
-            } else if (status == AnimationStatus.dismissed) {
-              // 如果处于可以开始的状态
-              controller.forward();
-            }
-          });
+          ..addStatusListener(
+            (status) {
+              if (status == AnimationStatus.completed) {
+                // 如果完成了，就反转动画
+                controller.reverse();
+              } else if (status == AnimationStatus.dismissed) {
+                // 如果处于可以开始的状态
+                controller.forward();
+              }
+            },
+          );
     controller.forward();
   }
 
