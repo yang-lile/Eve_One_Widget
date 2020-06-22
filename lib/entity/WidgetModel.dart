@@ -30,6 +30,7 @@ enum WidgetNames {
   ALIGN,
   POSITIONED,
   ANIMATED_BUILDER,
+  DISMISSIBLE,
   ABOUT_DIALOG, // 这里是83
 }
 

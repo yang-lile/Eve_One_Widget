@@ -7,6 +7,7 @@ import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
 import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
+import 'package:Eve_One_Widget/pages/DismissibleDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
@@ -60,6 +61,7 @@ final routes = {
   "/align": (context) => AlignDemo(),
   "/positioned": (context) => PositionedDemo(),
   "/animated_builder": (context) => AnimatedBuilderDemo(),
+  "/dismissible": (context) => DismissibleDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
