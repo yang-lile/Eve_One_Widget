@@ -22,6 +22,7 @@ import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
 import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
+import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
 import 'package:Eve_One_Widget/pages/StreamBuilderDemo.dart';
@@ -62,6 +63,7 @@ final routes = {
   "/positioned": (context) => PositionedDemo(),
   "/animated_builder": (context) => AnimatedBuilderDemo(),
   "/dismissible": (context) => DismissibleDemo(),
+  "/sized_box": (context) => SizedBoxDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
