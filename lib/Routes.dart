@@ -29,6 +29,7 @@ import 'package:Eve_One_Widget/pages/StreamBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/TableDemo.dart';
 import 'package:Eve_One_Widget/pages/TooltipDemo.dart';
 import 'package:Eve_One_Widget/pages/TransformDemo.dart';
+import 'package:Eve_One_Widget/pages/ValueListenableBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/WrapDemo.dart';
 import 'package:flutter/material.dart';
 
@@ -64,6 +65,7 @@ final routes = {
   "/animated_builder": (context) => AnimatedBuilderDemo(),
   "/dismissible": (context) => DismissibleDemo(),
   "/sized_box": (context) => SizedBoxDemo(),
+  "/value_listenable_builder": (context) => ValueListenableBuilderDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
