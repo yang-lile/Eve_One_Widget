@@ -1,5 +1,7 @@
 /// 居然是一个不需要重绘ui就可以更新数据的控件
 /// 奇怪的性能提升了！！！
+/// https://juejin.im/post/5ced2f62e51d454fd8057b18#heading-3
+/// 网址提供了自定义`ValueNotifier`的方法，可以局部更新对象的数据
 
 import 'dart:math';
 
