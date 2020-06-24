@@ -8,6 +8,7 @@ import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
 import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
 import 'package:Eve_One_Widget/pages/DismissibleDemo.dart';
+import 'package:Eve_One_Widget/pages/DraggableDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
@@ -66,6 +67,7 @@ final routes = {
   "/dismissible": (context) => DismissibleDemo(),
   "/sized_box": (context) => SizedBoxDemo(),
   "/value_listenable_builder": (context) => ValueListenableBuilderDemo(),
+  "/draggable": (context) => DraggableDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
