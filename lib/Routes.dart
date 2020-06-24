@@ -4,6 +4,7 @@ import 'package:Eve_One_Widget/pages/AbsorbPointerDemo.dart';
 import 'package:Eve_One_Widget/pages/AlignDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
+import 'package:Eve_One_Widget/pages/AnimatedListDemo.dart';
 import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
 import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
@@ -68,6 +69,7 @@ final routes = {
   "/sized_box": (context) => SizedBoxDemo(),
   "/value_listenable_builder": (context) => ValueListenableBuilderDemo(),
   "/draggable": (context) => DraggableDemo(),
+  "/animated_list": (context) => AnimatedListDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
