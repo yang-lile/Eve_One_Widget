@@ -1,7 +1,7 @@
 /// 主要用于专场动画，
 /// 你可以直接复制粘贴FadeTransionDemoModel来修改属于你的转场动画
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class FadeTransitionDemo extends StatelessWidget {

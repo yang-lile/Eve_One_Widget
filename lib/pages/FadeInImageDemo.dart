@@ -1,4 +1,4 @@
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class FadeInImageDemo extends StatelessWidget {

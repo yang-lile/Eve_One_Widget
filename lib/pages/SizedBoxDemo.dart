@@ -3,7 +3,7 @@
 /// 2. 通过`double.infinity`来设置最大值
 /// 3. 在简单的布局里，使用不含子控件的`SizedBox`来占位
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class SizedBoxDemo extends StatelessWidget {

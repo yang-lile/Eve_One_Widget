@@ -1,7 +1,7 @@
 /// 视频中演示了Opacity，十分简单，设置opacity为0即可
 /// 我们来实现AnimatedOpacity
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class OpacityDemo extends StatefulWidget {

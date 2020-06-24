@@ -4,7 +4,7 @@
 /// 当然，现在我们使用各种状态管理插件
 /// 而不再使用这一套操作，所以InheritedModel也可以只做了解
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class InheritedModelDemo extends StatefulWidget {
