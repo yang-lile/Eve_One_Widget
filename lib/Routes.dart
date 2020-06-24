@@ -14,6 +14,7 @@ import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
 import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
 import 'package:Eve_One_Widget/pages/FittedBoxDemo.dart';
+import 'package:Eve_One_Widget/pages/FlexibleDemo.dart';
 import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/HeroDemo.dart';
@@ -70,6 +71,7 @@ final routes = {
   "/value_listenable_builder": (context) => ValueListenableBuilderDemo(),
   "/draggable": (context) => DraggableDemo(),
   "/animated_list": (context) => AnimatedListDemo(),
+  "/flexible": (context) => FlexibleDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
