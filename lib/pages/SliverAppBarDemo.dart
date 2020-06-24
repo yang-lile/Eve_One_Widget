@@ -9,13 +9,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 class SliverAppBarDemo extends StatelessWidget {
+  // 获取appbar高度
+  final double appBarHeight = kToolbarHeight;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            expandedHeight: 240 + 56.0, // 图片高+状态栏高，待实现
+            expandedHeight: 240 + appBarHeight, // 图片高+状态栏高，待实现
             pinned: true, // 顶栏滑动时是否不消失
             // 如果同时设置floating和snap属性为true，那么AppBar会在你做出下拉手势时就立即全部展开（即使ListView并没有到达顶部）
             snap: false,
@@ -61,7 +64,7 @@ class SliverAppBarDemo extends StatelessWidget {
 
   Widget _buildItem(int index) {
     return Container(
-      height: 56,
+      height: appBarHeight,
       child: Card(child: Center(child: Text("card$index"))),
     );
   }

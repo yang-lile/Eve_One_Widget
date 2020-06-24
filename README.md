@@ -45,3 +45,6 @@
 
 ## 打包注意
 1. 设置联网权限
+
+## 待解决问题
+1. `lib\pages\SliverAppBarDemo.dart`的图片高度获取的实现
