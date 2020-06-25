@@ -1,5 +1,5 @@
-import 'package:eve_one_widget/Routes.dart';
-import 'package:eve_one_widget/entity/WidgetModel.dart';
+import 'package:Eve_One_Widget/Routes.dart';
+import 'package:Eve_One_Widget/entity/WidgetModel.dart';
 import 'package:flutter/material.dart';
 
 void main() {

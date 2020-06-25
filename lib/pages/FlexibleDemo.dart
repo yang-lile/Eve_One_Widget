@@ -1,7 +1,7 @@
 /// flexible这个控件其实类似于原生安卓里的weight比重
 /// 或许有更好的使用方式，而不只是控件
 
-import 'package:eve_one_widget/template/MyScaffold.dart';
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class FlexibleDemo extends StatelessWidget {

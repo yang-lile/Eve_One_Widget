@@ -2,7 +2,7 @@
 /// 一个写的比较好的教程
 /// bug: 滑动到底部无边界，继续滚动
 
-import 'package:eve_one_widget/template/MyScaffold.dart';
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class SliverListAndSliverGridDemo extends StatelessWidget {
