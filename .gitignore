@@ -45,3 +45,4 @@ app.*.map.json
 # 自定义忽略
 /android/key.properties
 /android/app/proguard-rules.pro
+/android/app/key/key.jks
