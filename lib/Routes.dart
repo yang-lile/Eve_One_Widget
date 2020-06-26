@@ -21,6 +21,7 @@ import 'package:Eve_One_Widget/pages/HeroDemo.dart';
 import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/LayoutBuilderDemo.dart';
+import 'package:Eve_One_Widget/pages/MediaQueryDemo.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
 import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
@@ -72,6 +73,7 @@ final routes = {
   "/draggable": (context) => DraggableDemo(),
   "/animated_list": (context) => AnimatedListDemo(),
   "/flexible": (context) => FlexibleDemo(),
+  "/media_query": (context) => MediaQueryDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
