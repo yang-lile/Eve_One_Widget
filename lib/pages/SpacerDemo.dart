@@ -1,3 +1,5 @@
+/// 如果说`Flexible`是用来调节子控件之间的占比
+
 import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
