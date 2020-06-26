@@ -37,6 +37,7 @@ enum WidgetNames {
   ANIMATED_LIST,
   FLEXIBLE,
   MEDIA_QUERY,
+  SPACER,
   ABOUT_DIALOG, // 这里是83
 }
 
