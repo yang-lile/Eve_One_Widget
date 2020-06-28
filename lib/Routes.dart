@@ -19,6 +19,7 @@ import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/HeroDemo.dart';
 import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
+import 'package:Eve_One_Widget/pages/InheritedWidgetDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/LayoutBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/MediaQueryDemo.dart';
@@ -76,6 +77,7 @@ final routes = {
   "/flexible": (context) => FlexibleDemo(),
   "/media_query": (context) => MediaQueryDemo(),
   "/spacer": (context) => SpacerDemo(),
+  "/inherited_widget": (context) => InheritedWidgetDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

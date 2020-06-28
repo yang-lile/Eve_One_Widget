@@ -1,6 +1,6 @@
 // 将枚举类型复制过来，去除掉introduction然后将生成的结果复制到Routes的routes里
 enum WidgetNames {
-  SPACER,
+  INHERITED_WIDGET,
 }
 main(List<String> args) {
   for (var i in WidgetNames.values) {
