@@ -32,15 +32,20 @@ enum WidgetNames {
   VALUE_LISTENABLE_BUILDER,
   DRAGGABLE,
   ANIMATED_LIST,
+  FLEXIBLE,
+  MEDIA_QUERY,
+  SPACER,
+  INHERITED_WIDGET,
+  ANIMATED_ICON,
   ABOUT_DIALOG, // 这里是83
 }
 
 main(List<String> args) {
   for (var i = 0; i < WidgetNames.values.length; i++) {
     String s = WidgetNames.values[i].toString().toLowerCase().split('.').last;
-        s = s[0].toUpperCase() + s.substring(1);
-        s = s.replaceAllMapped(
-            new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
+    s = s[0].toUpperCase() + s.substring(1);
+    s = s.replaceAllMapped(
+        new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
     print("$i. $s");
   }
 }

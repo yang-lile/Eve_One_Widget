@@ -39,6 +39,7 @@ enum WidgetNames {
   MEDIA_QUERY,
   SPACER,
   INHERITED_WIDGET,
+  ANIMATED_ICON,
   ABOUT_DIALOG, // 这里是83
 }
 

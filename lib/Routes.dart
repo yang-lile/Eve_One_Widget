@@ -4,6 +4,7 @@ import 'package:Eve_One_Widget/pages/AbsorbPointerDemo.dart';
 import 'package:Eve_One_Widget/pages/AlignDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
+import 'package:Eve_One_Widget/pages/AnimatedIconDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedListDemo.dart';
 import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
@@ -78,6 +79,7 @@ final routes = {
   "/media_query": (context) => MediaQueryDemo(),
   "/spacer": (context) => SpacerDemo(),
   "/inherited_widget": (context) => InheritedWidgetDemo(),
+  "/animated_icon": (context) => AnimatedIconDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
