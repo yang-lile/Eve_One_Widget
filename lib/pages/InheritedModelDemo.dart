@@ -20,7 +20,7 @@ class _InheritedModelDemoState extends State<InheritedModelDemo> {
   @override
   Widget build(BuildContext context) {
     return MyScaffold(
-      appBarTitle: "InheritedModel",
+      appBarTitle: "InheritedModelDemo",
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
