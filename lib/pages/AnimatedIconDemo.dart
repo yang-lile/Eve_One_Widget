@@ -21,6 +21,12 @@ class _AnimatedIconDemoState extends State<AnimatedIconDemo>
   }
 
   @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return MyScaffold(
       appBarTitle: "AnimatedIconDemo",
