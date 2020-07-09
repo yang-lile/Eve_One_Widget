@@ -28,6 +28,7 @@ import 'package:Eve_One_Widget/pages/LimitedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/MediaQueryDemo.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
+import 'package:Eve_One_Widget/pages/PlaceholderDemo.dart';
 import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
 import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
@@ -84,6 +85,7 @@ final routes = {
   "/animated_icon": (context) => AnimatedIconDemo(),
   "/aspect_ratio": (context) => AspectRatioDemo(),
   "/limited_box": (context) => LimitedBoxDemo(),
+  "/placeholder": (context) => PlaceholderDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
