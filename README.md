@@ -40,7 +40,7 @@
 34. MediaQuery
 35. Spacer
 36. InheritedWidget
-37. AnimatedIcon
+37. AnimatedIcon *
 38. AboutDialog
 
 ## 每次更新需要修改的位置
