@@ -24,6 +24,7 @@ import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
 import 'package:Eve_One_Widget/pages/InheritedWidgetDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/LayoutBuilderDemo.dart';
+import 'package:Eve_One_Widget/pages/LimitedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/MediaQueryDemo.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
@@ -82,6 +83,7 @@ final routes = {
   "/inherited_widget": (context) => InheritedWidgetDemo(),
   "/animated_icon": (context) => AnimatedIconDemo(),
   "/aspect_ratio": (context) => AspectRatioDemo(),
+  "/limited_box": (context) => LimitedBoxDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

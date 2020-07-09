@@ -41,6 +41,7 @@ enum WidgetNames {
   INHERITED_WIDGET,
   ANIMATED_ICON,
   ASPECT_RATIO,
+  LIMITED_BOX,
   ABOUT_DIALOG, // 这里是83
 }
 
