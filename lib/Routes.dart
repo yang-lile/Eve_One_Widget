@@ -30,6 +30,7 @@ import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
 import 'package:Eve_One_Widget/pages/PlaceholderDemo.dart';
 import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
+import 'package:Eve_One_Widget/pages/ReorderableListViewDemo.dart';
 import 'package:Eve_One_Widget/pages/RichTextDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
 import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
@@ -88,6 +89,7 @@ final routes = {
   "/limited_box": (context) => LimitedBoxDemo(),
   "/placeholder": (context) => PlaceholderDemo(),
   "/rich_text": (context) => RichTextDemo(),
+  "/reorderable_list_view": (context) => ReorderableListViewDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

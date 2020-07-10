@@ -44,6 +44,7 @@ enum WidgetNames {
   LIMITED_BOX,
   PLACEHOLDER,
   RICH_TEXT,
+  REORDERABLE_LIST_VIEW,
   ABOUT_DIALOG, // 这里是83
 }
 
