@@ -1,9 +1,11 @@
+import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class PlaceholderDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MyScaffold(
+      appBarTitle: "PlaceholderDemo",
       body: Column(
         children: <Widget>[
           Placeholder(

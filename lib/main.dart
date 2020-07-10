@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
     0, 1, 1, 0, 0, // 26-30
     1, 1, 0, 0, 0, // 31-35
     1, 1, 0, 0, 0, // 36-40
+    0, // 41-45
     0, // 83
   ];
 

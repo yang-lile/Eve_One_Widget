@@ -43,6 +43,7 @@ enum WidgetNames {
   ASPECT_RATIO,
   LIMITED_BOX,
   PLACEHOLDER,
+  RICH_TEXT,
   ABOUT_DIALOG, // 这里是83
 }
 

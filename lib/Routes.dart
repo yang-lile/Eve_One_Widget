@@ -30,6 +30,7 @@ import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
 import 'package:Eve_One_Widget/pages/PlaceholderDemo.dart';
 import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
+import 'package:Eve_One_Widget/pages/RichTextDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
 import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
@@ -86,6 +87,7 @@ final routes = {
   "/aspect_ratio": (context) => AspectRatioDemo(),
   "/limited_box": (context) => LimitedBoxDemo(),
   "/placeholder": (context) => PlaceholderDemo(),
+  "/rich_text": (context) => RichTextDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
