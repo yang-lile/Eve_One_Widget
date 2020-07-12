@@ -1,5 +1,4 @@
-import 'dart:math';
-
+import 'package:Eve_One_Widget/entity/RandomTools.dart';
 import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +29,7 @@ class _RListViewDemoState extends State<RListViewDemo> {
   void initState() {
     super.initState();
     for (var i = 0; i < 100; i++) {
-      data.add({i: randomColors()});
+      data.add({i: RandomTools.randomColors()});
     }
   }
 
@@ -65,18 +64,5 @@ class _RListViewDemoState extends State<RListViewDemo> {
             data.insert(newIndex, element);
           });
         });
-  }
-
-  Color randomColors() {
-    List colors = [
-      Colors.red,
-      Colors.orange,
-      Colors.yellow,
-      Colors.green,
-      Colors.cyan,
-      Colors.blue,
-      Colors.purple
-    ];
-    return colors[Random().nextInt(6)];
   }
 }

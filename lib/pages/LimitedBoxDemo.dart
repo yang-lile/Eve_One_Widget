@@ -1,7 +1,6 @@
 /// 相当于把Container的高宽属性提出来的一个控件，用于设置最大高宽
 
-import 'dart:math';
-
+import 'package:Eve_One_Widget/entity/RandomTools.dart';
 import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
@@ -19,25 +18,12 @@ class LimitedBoxDemo extends StatelessWidget {
                 maxHeight: 100.0,
                 maxWidth: 150.0,
                 child: Container(
-                  color: randomColors(),
+                  color: RandomTools.randomColors(),
                 ),
               ),
             ),
         ],
       ),
     );
-  }
-
-  randomColors() {
-    List colors = [
-      Colors.red,
-      Colors.orange,
-      Colors.yellow,
-      Colors.green,
-      Colors.cyan,
-      Colors.blue,
-      Colors.purple
-    ];
-    return colors[Random().nextInt(6)];
   }
 }

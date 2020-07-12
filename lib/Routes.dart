@@ -6,6 +6,7 @@ import 'package:Eve_One_Widget/pages/AnimatedBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedIconDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedListDemo.dart';
+import 'package:Eve_One_Widget/pages/AnimatedSwitcherDemo.dart';
 import 'package:Eve_One_Widget/pages/AspectRatioDemo.dart';
 import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
@@ -90,6 +91,7 @@ final routes = {
   "/placeholder": (context) => PlaceholderDemo(),
   "/rich_text": (context) => RichTextDemo(),
   "/reorderable_list_view": (context) => ReorderableListViewDemo(),
+  "/animated_switcher": (context) => AnimatedSwitcherDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
