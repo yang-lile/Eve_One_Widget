@@ -40,8 +40,14 @@
 34. MediaQuery
 35. Spacer
 36. InheritedWidget
-37. AnimatedIcon *
-38. AboutDialog
+37. AnimatedIcon
+38. AspectRatio
+39. LimitedBox
+40. Placeholder
+41. RichText
+42. ReorderableListView
+43. AnimatedSwitcher *
+44. AboutDialog
 
 ## 每次更新需要修改的位置
 
