@@ -59,7 +59,19 @@
 5. 修改`lib\main.dart`里`_MyHomePageState`类里的`subtitlesIndex`子标题属性，注意下标
 
 ## 打包注意
+
 1. 设置联网权限
 
 ## 待解决问题
+
 1. `lib\pages\SliverAppBarDemo.dart`的图片高度获取的实现
+
+## 风格突变
+
+由于学习了新的使用方法，动画将更加流畅从AnimatedPositioned开始将使用一些令人舒适的动画效果，当然也伴随着较高成本的学习量，希望您能更上学习节奏
+
+## 备注
+安卓打包命令：
+```cmd
+> flutter build apk --split-per-abi
+```
