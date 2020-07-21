@@ -23,6 +23,7 @@ import 'package:Eve_One_Widget/pages/FlexibleDemo.dart';
 import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/HeroDemo.dart';
+import 'package:Eve_One_Widget/pages/IndexedStackDemo.dart';
 import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
 import 'package:Eve_One_Widget/pages/InheritedWidgetDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
@@ -96,6 +97,7 @@ final routes = {
   "/animated_switcher": (context) => AnimatedSwitcherDemo(),
   "/animated_positioned": (context) => AnimatedPositionedDemo(),
   "/animated_padding": (context) => AnimatedPaddingDemo(),
+  "/indexed_stack": (context) => IndexedStackDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
