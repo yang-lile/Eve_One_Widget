@@ -2,7 +2,7 @@ import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class ConstrainedBoxDemo extends StatelessWidget {
-  List<_Message> _messeges = [
+  final List<_Message> _messeges = [
     _Message(id: 1, message: "1，是指某某人说的"),
     _Message(id: 2, message: "2，也是某某群友"),
     _Message(id: 0, message: "0，是你自己"),
@@ -16,6 +16,20 @@ class ConstrainedBoxDemo extends StatelessWidget {
         id: 1,
         message:
             "右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，\n右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，右边长句测试，"),
+    _Message(id: 2, message: """废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，
+废话测试，废话测试，废话测试，废话测试，废话测试，废话测试，""")
   ];
 
   @override
@@ -23,48 +37,97 @@ class ConstrainedBoxDemo extends StatelessWidget {
     double screenW = MediaQuery.of(context).size.width;
     return MyScaffold(
       appBarTitle: "ConstrainedBoxDemo",
-      body: ListView.builder(
-        itemCount: _messeges.length,
-        itemBuilder: (BuildContext context, int index) {
-          if (_messeges[index].id == 0) {
-            return ConstrainedBox(
-              constraints: BoxConstraints(maxWidth: screenW * 9 / 10),
-              child: Row(
-                children: <Widget>[
-                  ConstrainedBox(
-                    constraints: BoxConstraints(maxWidth: screenW * 8 / 10),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8.0),
-                        ),
-                      ),
-                      child: Text(_messeges[index].message),
+      body: Padding(
+        padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+        child: ListView.builder(
+          itemCount: _messeges.length,
+          itemBuilder: (BuildContext context, int index) {
+            if (_messeges[index].id == 0) {
+              return ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: screenW * 9 / 10),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Expanded(
+                      child: Container(),
                     ),
-                  ),
-                  Semantics(
-                    container: true,
-                    label: "头像",
-                    child: Ink(
-                      width: screenW / 10,
-                      height: screenW / 10,
-                      decoration: BoxDecoration(
-                        color: Colors.blue[100 * _messeges[index].id],
-                        borderRadius:
-                            BorderRadius.all(Radius.circular(screenW / 20)),
-                      ),
-                      child: InkWell(
-                        borderRadius:
-                            BorderRadius.all(Radius.circular(screenW / 20)),
-                        child: Container(),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            );
-          } else {}
-        },
+                    buildMessage(
+                        index, screenW, "消息来自自己", Alignment.centerRight),
+                    buildHeadImage(screenW, index)
+                  ],
+                ),
+              );
+            } else {
+              return ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: screenW * 9 / 10),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    buildHeadImage(screenW, index),
+                    buildMessage(
+                        index,
+                        screenW,
+                        "消息来自${_messeges[index].id == 1 ? "一号群友" : "二号群友"}",
+                        Alignment.centerLeft),
+                  ],
+                ),
+              );
+            }
+          },
+        ),
+      ),
+    );
+  }
+
+  Widget buildHeadImage(double screenW, int index) {
+    return Tooltip(
+      message: "头像",
+      child: Semantics(
+        container: true,
+        label: "头像",
+        child: Ink(
+          width: screenW / 10,
+          height: screenW / 10,
+          decoration: BoxDecoration(
+            color: Colors.blue[100 * _messeges[index].id + 100],
+            borderRadius: BorderRadius.all(Radius.circular(screenW / 20)),
+          ),
+          child: InkWell(
+            borderRadius: BorderRadius.all(Radius.circular(screenW / 20)),
+            child: Container(),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget buildMessage(
+    int index,
+    double screenW,
+    String hint,
+    AlignmentGeometry acr,
+  ) {
+    return Semantics(
+      label: _messeges[index].message,
+      hint: hint,
+      child: Container(
+        margin: EdgeInsets.all(8.0),
+        alignment: acr,
+        decoration: BoxDecoration(
+          color: _messeges[index].id == 0
+              ? Colors.blue[100]
+              : Colors.blueGrey[100],
+          borderRadius: BorderRadius.all(
+            Radius.circular(8.0),
+          ),
+        ),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: screenW * 7 / 10),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(_messeges[index].message),
+          ),
+        ),
       ),
     );
   }

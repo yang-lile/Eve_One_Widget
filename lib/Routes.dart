@@ -12,6 +12,7 @@ import 'package:Eve_One_Widget/pages/AnimatedSwitcherDemo.dart';
 import 'package:Eve_One_Widget/pages/AspectRatioDemo.dart';
 import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
 import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
+import 'package:Eve_One_Widget/pages/ConstrainedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
 import 'package:Eve_One_Widget/pages/DismissibleDemo.dart';
 import 'package:Eve_One_Widget/pages/DraggableDemo.dart';
@@ -100,6 +101,7 @@ final routes = {
   "/animated_padding": (context) => AnimatedPaddingDemo(),
   "/indexed_stack": (context) => IndexedStackDemo(),
   "/semantics": (context) => SemanticsDemo(),
+  "/constrained_box": (context) => ConstrainedBoxDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

@@ -43,6 +43,7 @@ enum WidgetNames {
   RICH_TEXT,
   REORDERABLE_LIST_VIEW,
   ANIMATED_SWITCHER,
+
   ABOUT_DIALOG, // 这里是83
 }
 
