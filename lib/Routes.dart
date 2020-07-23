@@ -37,6 +37,7 @@ import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
 import 'package:Eve_One_Widget/pages/ReorderableListViewDemo.dart';
 import 'package:Eve_One_Widget/pages/RichTextDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
+import 'package:Eve_One_Widget/pages/SemanticsDemo.dart';
 import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
@@ -98,6 +99,7 @@ final routes = {
   "/animated_positioned": (context) => AnimatedPositionedDemo(),
   "/animated_padding": (context) => AnimatedPaddingDemo(),
   "/indexed_stack": (context) => IndexedStackDemo(),
+  "/semantics": (context) => SemanticsDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

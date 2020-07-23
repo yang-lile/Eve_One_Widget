@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       onGenerateRoute: onGenerateRoute,
+      // showSemanticsDebugger: true, // 大可不必使用，万恶之源
     );
   }
 }
@@ -50,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
     1, 1, 0, 0, 0, // 31-35
     1, 1, 0, 0, 0, // 36-40
     0, 1, 1, 1, 1, // 41-45
-    1, // 46-50
+    1, 0, // 46-50
     0, // 83
   ];
 
