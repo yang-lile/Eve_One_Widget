@@ -43,8 +43,20 @@ enum WidgetNames {
   RICH_TEXT,
   REORDERABLE_LIST_VIEW,
   ANIMATED_SWITCHER,
-
+  ANIMATED_POSITIONED,
+  ANIMATED_PADDING,
+  INDEXED_STACK,
+  SEMANTICS,
+  CONSTRAINED_BOX,
   ABOUT_DIALOG, // 这里是83
+}
+
+enum NewWidgetNames {
+  ANIMATED_POSITIONED,
+  ANIMATED_PADDING,
+  INDEXED_STACK,
+  SEMANTICS,
+  CONSTRAINED_BOX,
 }
 
 main(List<String> args) {
@@ -54,5 +66,14 @@ main(List<String> args) {
     s = s.replaceAllMapped(
         new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
     print("$i. $s");
+  }
+
+  print("1. 新增了新控件：");
+  for (var item in NewWidgetNames.values) {
+    String s = item.toString().toLowerCase().split('.').last;
+    s = s[0].toUpperCase() + s.substring(1);
+    s = s.replaceAllMapped(
+        new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
+    print("s,");
   }
 }

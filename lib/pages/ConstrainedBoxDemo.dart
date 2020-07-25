@@ -1,3 +1,6 @@
+/// 实现`Container`适配子控件的大小的方法：
+/// 使用`Container`->`ConstrainedBox`(设置最大宽)->`子控件`
+
 import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
