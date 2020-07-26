@@ -1,3 +1,1 @@
-main(List<String> args) {
-  print(10 % 4);
-}
+main(List<String> args) {}

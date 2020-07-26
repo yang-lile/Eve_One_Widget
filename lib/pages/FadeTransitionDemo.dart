@@ -11,7 +11,7 @@ class FadeTransitionDemo extends StatelessWidget {
       appBarTitle: "FadeTransitionDemo",
       body: Align(
         alignment: Alignment.center,
-        child: FadeTransitionDemoModel(
+        child: _FadeTransitionTest(
           child: Container(
             color: Colors.yellow[500],
             width: 200.0,
@@ -23,17 +23,16 @@ class FadeTransitionDemo extends StatelessWidget {
   }
 }
 
-class FadeTransitionDemoModel extends StatefulWidget {
+class _FadeTransitionTest extends StatefulWidget {
   final Widget child;
 
-  FadeTransitionDemoModel({@required this.child});
+  _FadeTransitionTest({@required this.child});
 
   @override
-  _FadeTransitionDemoModelState createState() =>
-      _FadeTransitionDemoModelState();
+  _FadeTransitionTestState createState() => _FadeTransitionTestState();
 }
 
-class _FadeTransitionDemoModelState extends State<FadeTransitionDemoModel>
+class _FadeTransitionTestState extends State<_FadeTransitionTest>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
 

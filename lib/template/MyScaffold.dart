@@ -1,3 +1,4 @@
+import 'package:Eve_One_Widget/codeviewer/prehighlighter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -51,28 +52,36 @@ class SourceCodePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Source Code")),
-      body: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Align(
-          alignment: Alignment.center,
-          child: _buildFutureBuilder(),
+      body: Container(
+        color: Colors.black,
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: <Widget>[
+            _buildFutureBuilder(context),
+          ],
         ),
       ),
     );
   }
 
-  FutureBuilder<String> _buildFutureBuilder() {
+  FutureBuilder<List<TextSpan>> _buildFutureBuilder(BuildContext context) {
     return FutureBuilder(
       future: _showCode(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          return SelectableText(
-            snapshot.data,
-            style: TextStyle(
-              color: Colors.black,
-            ),
-            toolbarOptions: ToolbarOptions(copy: true, selectAll: true),
-          );
+          print(snapshot.data);
+          return Text.rich(TextSpan(
+            children: snapshot.data,
+            // recognizer: LongPressGestureRecognizer(
+            // )
+          ));
+          // return SelectableText(
+          //   snapshot.data,
+          //   style: TextStyle(
+          //     color: Colors.black,
+          //   ),
+          //   toolbarOptions: ToolbarOptions(copy: true, selectAll: true),
+          // );
         } else {
           return CircularProgressIndicator();
         }
@@ -80,9 +89,18 @@ class SourceCodePage extends StatelessWidget {
     );
   }
 
-  Future<String> _showCode() {
+  Future<List<TextSpan>> _showCode() async {
     String _string = "lib/pages/${this.title}.dart";
-    return rootBundle.loadString(_string);
+    final _content = await rootBundle.loadString(_string);
+    final _codes = _content.split('\n');
+    List<TextSpan> _spanedCodes = List<TextSpan>();
+    for (var _code in _codes) {
+      _spanedCodes.addAll(DartSyntaxPrehighlighter().format(_code));
+      _spanedCodes.add(TextSpan(
+        text: "\n",
+      ));
+    }
+    return _spanedCodes;
   }
 }
 
