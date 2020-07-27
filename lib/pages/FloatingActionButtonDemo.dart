@@ -18,9 +18,7 @@ class FloatingActionButtonDemo extends StatelessWidget {
 
   AppBar _buildAppBar(BuildContext context) {
     return AppBar(
-      title: MyFadeTransition1(
-        child: Text(appBarTitle),
-      ),
+      title: Text(appBarTitle),
       actions: <Widget>[
         FlatButton.icon(
           onPressed: () => Navigator.push(

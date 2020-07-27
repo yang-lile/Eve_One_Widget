@@ -74,6 +74,6 @@ main(List<String> args) {
     s = s[0].toUpperCase() + s.substring(1);
     s = s.replaceAllMapped(
         new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
-    print("s,");
+    print("$s,");
   }
 }

@@ -149,22 +149,29 @@ class DartSyntaxPrehighlighter extends SyntaxPrehighlighter {
         continue;
       }
 
+      // TODO: 值得优化
+      // 曲线救国法，但是有用
       // Line comments
       if (_scanner.scan('//')) {
-        _spans.add(_HighlightSpan(
-          _HighlightType.comment,
-          _scanner.lastMatch.start,
-          _src.length - 1,
-        ));
-        continue;
-      }
+        final startComment = _scanner.lastMatch.start;
 
-      if (_scanner.scan('///')) {
+        var eof = false;
+        int endComment;
+        if (!_scanner.scan(RegExp(r'.*\n'))) {
+          eof = true;
+          endComment = _src.length;
+        }
+
         _spans.add(_HighlightSpan(
           _HighlightType.comment,
-          _scanner.lastMatch.start,
-          _src.length - 1,
+          startComment,
+          endComment,
         ));
+
+        if (eof) {
+          break;
+        }
+
         continue;
       }
 
