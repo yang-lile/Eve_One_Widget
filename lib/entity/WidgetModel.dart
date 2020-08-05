@@ -51,6 +51,8 @@ enum WidgetNames {
   INDEXED_STACK,
   SEMANTICS,
   CONSTRAINED_BOX,
+  STACK,
+  // ANIMATED_OPACITY,
   ABOUT_DIALOG, // 这里是83
 }
 

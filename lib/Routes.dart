@@ -43,6 +43,7 @@ import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
 import 'package:Eve_One_Widget/pages/SpacerDemo.dart';
+import 'package:Eve_One_Widget/pages/StackDemo.dart';
 import 'package:Eve_One_Widget/pages/StreamBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/TableDemo.dart';
 import 'package:Eve_One_Widget/pages/TooltipDemo.dart';
@@ -102,6 +103,7 @@ final routes = {
   "/indexed_stack": (context) => IndexedStackDemo(),
   "/semantics": (context) => SemanticsDemo(),
   "/constrained_box": (context) => ConstrainedBoxDemo(),
+  "/stack": (context) => StackDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
