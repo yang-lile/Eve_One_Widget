@@ -23,6 +23,7 @@ import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
 import 'package:Eve_One_Widget/pages/FittedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/FlexibleDemo.dart';
 import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
+import 'package:Eve_One_Widget/pages/FractionallySizedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/HeroDemo.dart';
 import 'package:Eve_One_Widget/pages/IndexedStackDemo.dart';
@@ -106,6 +107,7 @@ final routes = {
   "/constrained_box": (context) => ConstrainedBoxDemo(),
   "/stack": (context) => StackDemo(),
   "/animated_opacity": (context) => AnimatedOpacityDemo(),
+  "/fractionally_sized_box": (context) => FractionallySizedBoxDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
