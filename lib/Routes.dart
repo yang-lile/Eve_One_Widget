@@ -6,6 +6,7 @@ import 'package:Eve_One_Widget/pages/AnimatedBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedIconDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedListDemo.dart';
+import 'package:Eve_One_Widget/pages/AnimatedOpacityDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedPaddingDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedPositionedDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedSwitcherDemo.dart';
@@ -104,6 +105,7 @@ final routes = {
   "/semantics": (context) => SemanticsDemo(),
   "/constrained_box": (context) => ConstrainedBoxDemo(),
   "/stack": (context) => StackDemo(),
+  "/animated_opacity": (context) => AnimatedOpacityDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
