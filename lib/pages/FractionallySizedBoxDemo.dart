@@ -12,10 +12,19 @@ class FractionallySizedBoxDemo extends StatelessWidget {
           children: <Widget>[
             FractionallySizedBox(
               widthFactor: 0.7,
-              child: MaterialButton(
-                color: Colors.blue,
-                onPressed: () {},
-                child: Text("占用宽的70%"),
+              child: Builder(
+                // 有点迷惑，能直接使用context，要使用Builder自己获取一个
+                builder: (BuildContext context) => MaterialButton(
+                  color: Colors.blue,
+                  onPressed: () {
+                    Scaffold.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text("没有彩蛋"),
+                      ),
+                    );
+                  },
+                  child: Text("占用宽的70%"),
+                ),
               ),
             ),
             Flexible(
