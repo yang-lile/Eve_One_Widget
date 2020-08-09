@@ -43,6 +43,7 @@ import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
 import 'package:Eve_One_Widget/pages/ReorderableListViewDemo.dart';
 import 'package:Eve_One_Widget/pages/RichTextDemo.dart';
 import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
+import 'package:Eve_One_Widget/pages/SelectableTextDemo.dart';
 import 'package:Eve_One_Widget/pages/SemanticsDemo.dart';
 import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
@@ -114,6 +115,7 @@ final routes = {
   "/list_view": (context) => ListViewDemo(),
   "/list_tile": (context) => ListTileDemo(),
   "/container": (context) => ContainerDemo(),
+  "/selectable_text": (context) => SelectableTextDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
