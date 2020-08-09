@@ -67,7 +67,7 @@ class SourceCodePage extends StatelessWidget {
       future: _showCode(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          return Text.rich(TextSpan(
+          return SelectableText.rich(TextSpan(
             children: snapshot.data,
           ));
         } else {
