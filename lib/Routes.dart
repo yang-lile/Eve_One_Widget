@@ -32,6 +32,7 @@ import 'package:Eve_One_Widget/pages/InheritedWidgetDemo.dart';
 import 'package:Eve_One_Widget/pages/Introduction.dart';
 import 'package:Eve_One_Widget/pages/LayoutBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/LimitedBoxDemo.dart';
+import 'package:Eve_One_Widget/pages/ListTileDemo.dart';
 import 'package:Eve_One_Widget/pages/ListViewDemo.dart';
 import 'package:Eve_One_Widget/pages/MediaQueryDemo.dart';
 import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
@@ -110,6 +111,7 @@ final routes = {
   "/animated_opacity": (context) => AnimatedOpacityDemo(),
   "/fractionally_sized_box": (context) => FractionallySizedBoxDemo(),
   "/list_view": (context) => ListViewDemo(),
+  "/list_tile": (context) => ListTileDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

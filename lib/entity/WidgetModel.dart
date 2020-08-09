@@ -55,6 +55,7 @@ enum WidgetNames {
   ANIMATED_OPACITY,
   FRACTIONALLY_SIZED_BOX,
   LIST_VIEW,
+  LIST_TILE,
   ABOUT_DIALOG, // 这里是83
 }
 

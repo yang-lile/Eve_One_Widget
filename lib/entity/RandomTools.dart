@@ -15,4 +15,9 @@ class RandomTools {
     ];
     return colors[Random().nextInt(6)];
   }
+
+  static randomNumber({int len = 1}) {
+    return Random().nextInt(pow(10, len - 1)) +
+        (Random().nextInt(8) + 1) * pow(10, len);
+  }
 }
