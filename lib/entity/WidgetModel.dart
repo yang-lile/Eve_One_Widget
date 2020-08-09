@@ -56,6 +56,7 @@ enum WidgetNames {
   FRACTIONALLY_SIZED_BOX,
   LIST_VIEW,
   LIST_TILE,
+  CONTAINER,
   ABOUT_DIALOG, // 这里是83
 }
 
