@@ -1,3 +1,4 @@
+import 'package:Eve_One_Widget/entity/RandomTools.dart';
 import 'package:Eve_One_Widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class ListViewDemo extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ListView(
                 children: <Widget>[
-                  for (var i = 0; i < 3; i++)
+                  for (var i = 0; i < 20; i++)
                     Builder(
                       builder: (BuildContext context) => MaterialButton(
                         onPressed: () {
@@ -26,7 +27,7 @@ class ListViewDemo extends StatelessWidget {
                           );
                         },
                         child: Text("data$i"),
-                        color: Colors.blue,
+                        color: RandomTools.randomColors(),
                       ),
                     )
                 ],
@@ -38,7 +39,7 @@ class ListViewDemo extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListView.builder(
-                itemCount: 4,
+                itemCount: 20,
                 itemBuilder: (BuildContext context, int index) {
                   return MaterialButton(
                     onPressed: () {
@@ -50,7 +51,7 @@ class ListViewDemo extends StatelessWidget {
                       );
                     },
                     child: Text("data$index"),
-                    color: Colors.blue,
+                    color: RandomTools.randomColors(),
                   );
                 },
               ),
@@ -61,7 +62,7 @@ class ListViewDemo extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListView.separated(
-                itemCount: 5,
+                itemCount: 20,
                 separatorBuilder: (BuildContext context, int index) {
                   return Divider(height: 1,);
                 },
@@ -76,7 +77,7 @@ class ListViewDemo extends StatelessWidget {
                       );
                     },
                     child: Text("data$index"),
-                    color: Colors.blue,
+                    color: RandomTools.randomColors(),
                   );
                 },
               ),
