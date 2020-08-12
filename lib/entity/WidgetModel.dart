@@ -59,6 +59,7 @@ enum WidgetNames {
   CONTAINER,
   SELECTABLE_TEXT,
   DATA_TABLE,
+  SLIDER,
   ABOUT_DIALOG, // 这里是83
 }
 
