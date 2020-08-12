@@ -6,15 +6,20 @@ class MyScaffold extends StatelessWidget {
   final String appBarTitle;
   final Widget body;
   final Widget floatingActionButton;
+  final Widget dialogContext;
 
   MyScaffold({
     @required this.appBarTitle,
     @required this.body,
     this.floatingActionButton,
+    this.dialogContext,
   });
 
   @override
   Widget build(BuildContext context) {
+    if (dialogContext != null) {
+      _showDialog(context);
+    }
     return Scaffold(
       appBar: AppBar(
         title: Text(appBarTitle),
@@ -35,6 +40,29 @@ class MyScaffold extends StatelessWidget {
       ),
       body: body,
       floatingActionButton: floatingActionButton ?? null,
+    );
+  }
+
+  void _showDialog(BuildContext context) {
+    // TODO: 曲线救国的方法
+    Future.delayed(
+      Duration(milliseconds: 50),
+      () => showDialog(
+        context: context,
+        child: AlertDialog(
+          content: dialogContext,
+          title: Text("学习提示"),
+          actions: <Widget>[
+            FlatButton(
+              child: Text(
+                "了解",
+                style: TextStyle(color: Colors.blue),
+              ),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

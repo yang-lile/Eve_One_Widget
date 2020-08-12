@@ -17,6 +17,7 @@ class AlertDialogDemo extends StatelessWidget {
           },
         ),
       ),
+      dialogContext: Text("展示了一个基础的对话框的使用，点击蓝色的按钮即可展开对话框。"),
     );
   }
 
