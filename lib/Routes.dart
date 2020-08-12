@@ -16,6 +16,7 @@ import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
 import 'package:Eve_One_Widget/pages/ConstrainedBoxDemo.dart';
 import 'package:Eve_One_Widget/pages/ContainerDemo.dart';
 import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
+import 'package:Eve_One_Widget/pages/DataTableDemo.dart';
 import 'package:Eve_One_Widget/pages/DismissibleDemo.dart';
 import 'package:Eve_One_Widget/pages/DraggableDemo.dart';
 import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
@@ -116,6 +117,7 @@ final routes = {
   "/list_tile": (context) => ListTileDemo(),
   "/container": (context) => ContainerDemo(),
   "/selectable_text": (context) => SelectableTextDemo(),
+  "/data_table": (context) => DataTableDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
