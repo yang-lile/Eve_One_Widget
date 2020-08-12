@@ -1,6 +1,7 @@
 import 'package:Eve_One_Widget/main.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AbsorbPointerDemo.dart';
+import 'package:Eve_One_Widget/pages/AlertDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AlignDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedBuilderDemo.dart';
 import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
@@ -120,6 +121,7 @@ final routes = {
   "/selectable_text": (context) => SelectableTextDemo(),
   "/data_table": (context) => DataTableDemo(),
   "/slider": (context) => SliderDemo(),
+  "/alert_dialog": (context) => AlertDialogDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 
