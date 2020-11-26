@@ -47,13 +47,16 @@ class _AnimatedListDemoState extends State<AnimatedListDemo> {
           );
         },
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {
-        // 插入数据
-        int index = listData.length;
-        // 顺序可以颠倒，但是index必须唯一
-        listData.insert(index, random.nextInt(3000));
-        _listKey.currentState.insertItem(index);
-      }),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          // 插入数据
+          int index = listData.length;
+          // 顺序可以颠倒，但是index必须唯一
+          listData.insert(index, random.nextInt(3000));
+          _listKey.currentState.insertItem(index);
+        },
+      ),
     );
   }
 }

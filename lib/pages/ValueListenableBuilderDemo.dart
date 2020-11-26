@@ -52,8 +52,9 @@ class ValueListenableBuilderDemo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.refresh),
         onPressed: () {
-          return _valueNotifier.value = _random.nextInt(3000);
+          return _valueNotifier.value = _random.nextInt(9999);
         },
       ),
     );

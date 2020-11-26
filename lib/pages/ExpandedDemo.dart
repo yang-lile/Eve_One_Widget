@@ -21,7 +21,7 @@ class ExpandedDemo extends StatelessWidget {
                 Expanded(
                     child: Container(
                   height: 50,
-                  color: Colors.purple,
+                  color: Colors.orange[400],
                 )),
                 Container(
                   width: 50,
@@ -45,7 +45,7 @@ class ExpandedDemo extends StatelessWidget {
                     flex: 2,
                     child: Container(
                       height: 50,
-                      color: Colors.purple,
+                      color: Colors.orange[400],
                     )),
                 Expanded(
                   flex: 3,
