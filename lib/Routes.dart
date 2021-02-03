@@ -1,4 +1,4 @@
-import 'package:Eve_One_Widget/main.dart';
+import 'package:Eve_One_Widget/HomePage.dart';
 import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
 import 'package:Eve_One_Widget/pages/AbsorbPointerDemo.dart';
 import 'package:Eve_One_Widget/pages/AlertDialogDemo.dart';

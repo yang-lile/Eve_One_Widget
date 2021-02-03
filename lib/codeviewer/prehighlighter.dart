@@ -1,4 +1,4 @@
-import 'package:Eve_One_Widget/codeviewer/code_style.dart';
+import 'package:Eve_One_Widget/GlobalDatas.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:string_scanner/string_scanner.dart';
@@ -6,7 +6,8 @@ import 'package:string_scanner/string_scanner.dart';
 final _codeTheme = GoogleFonts.robotoMono(
   fontSize: 11,
 );
-final _section = CodeStyle(
+
+final _section = GlobalDatas(
   baseStyle: _codeTheme.copyWith(color: const Color(0xFFFAFBFB)),
   numberStyle: _codeTheme.copyWith(color: const Color(0xFFBD93F9)),
   commentStyle: _codeTheme.copyWith(color: const Color(0xFF808080)),
