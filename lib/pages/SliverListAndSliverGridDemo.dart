@@ -15,7 +15,19 @@ class SliverListAndSliverGridDemo extends StatelessWidget {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
-                return Container(
+                return 
+                // ListTile(
+                //   leading: Icon(
+                //     Icons.access_alarm,
+                //     size: 32.0,
+                //   ),
+                //   title: Text("data $index"),
+                //   subtitle: Text("subdata"),
+                //   onTap: () {
+                //     print(index);
+                //   },
+                // );
+                Container(
                   color: Colors.blue[index * 100],
                   height: 110,
                 );
