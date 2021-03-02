@@ -60,16 +60,19 @@ class FloatingActionButtonDemo extends StatelessWidget {
     );
   }
 
-  TextButton _textButton(Icon icon, String string) {
-    return TextButton(
-      onPressed: () {},
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          icon,
-          Text(string),
-        ],
+  Widget _textButton(Icon icon, String string) {
+    return Builder(
+      builder: (context) => IconButton(
+        onPressed: () {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(string),
+              behavior: SnackBarBehavior.floating,
+            ),
+          );
+        },
+        icon: icon,
+        tooltip: string,
       ),
     );
   }

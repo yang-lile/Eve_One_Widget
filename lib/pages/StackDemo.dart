@@ -13,36 +13,35 @@ class StackDemo extends StatelessWidget {
           // 默认是Overflow.clip（超出的剪切掉），改为超出的也显示
           // overflow: Overflow.visible,
           // update on flutter ^1.26.0
-          // TODO: debug
-          clipBehavior : Clip.antiAlias,
+          clipBehavior : Clip.none,
           children: <Widget>[
             Container(
               color: Colors.red[300],
-              width: 300.0,
-              height: 300.0,
+              width: 180.0,
+              height: 180.0,
             ),
             Container(
               color: Colors.yellow[300],
-              width: 250.0,
-              height: 250.0,
-            ),
-            Container(
-              color: Colors.blue[300],
-              width: 200.0,
-              height: 200.0,
-            ),
-            Container(
-              color: Colors.green[300],
               width: 150.0,
               height: 150.0,
             ),
+            Container(
+              color: Colors.blue[300],
+              width: 120.0,
+              height: 120.0,
+            ),
+            Container(
+              color: Colors.green[300],
+              width: 90.0,
+              height: 90.0,
+            ),
             Positioned(
-              bottom: -50,
-              right: -50,
+              bottom: -30,
+              right: -30,
               child: Container(
                 color: Colors.blueGrey[300],
-                width: 100.0,
-                height: 100.0,
+                width: 60.0,
+                height: 60.0,
               ),
             ),
           ],

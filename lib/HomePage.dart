@@ -61,69 +61,46 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Container(
-        child: ListView.builder(
-          itemBuilder: (context, int index) {
-            return TextButton(
-              child: _buildListElement(index),
-              onPressed: () => _onPressed(index),
-            );
-          },
-          itemCount: widgetModels.length,
-        ),
-      ),
-    );
-  }
-
-  Container _buildListElement(int index) {
-    return Container(
-      padding: EdgeInsets.only(left: 0.0, top: 10, right: 16.0, bottom: 10),
-      child: Row(
-        children: <Widget>[
-          Container(
-            width: 30.0,
-            child: Text(
-              (1 + index).toString(),
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.grey,
-              ),
-            ),
-          ),
-          Hero(
-            tag: "image" + index.toString(),
-            child: Image.asset(
-              this.widgetModels[index].image,
-              width: 120,
-              fit: BoxFit.contain,
-            ),
-          ),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(left: 16.0, bottom: 10.0),
-                  child: Hero(
-                    tag: this.widgetModels[index].title,
-                    child: Text(
-                      this.widgetModels[index].title,
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+      body: ListView.builder(
+        itemBuilder: (context, int index) {
+          return ListTile(
+            leading: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 24.0,
+                  child: Text(
+                    (1 + index).toString(),
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
                     ),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(left: 16.0),
-                  child: Text(
-                    this.widgetModels[index].subtitle,
-                    style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
+                Hero(
+                  tag: "image" + index.toString(),
+                  child: Image.asset(
+                    this.widgetModels[index].image,
+                    fit: BoxFit.contain,
                   ),
-                )
+                ),
               ],
             ),
-          ),
-        ],
+            title: Hero(
+              tag: this.widgetModels[index].title,
+              child: Text(
+                this.widgetModels[index].title,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ),
+            ),
+            subtitle: Text(
+              this.widgetModels[index].subtitle,
+              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
+            ),
+            onTap: () => _onPressed(index),
+          );
+        },
+        itemCount: widgetModels.length,
       ),
     );
   }
