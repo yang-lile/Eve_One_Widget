@@ -4,7 +4,7 @@
 /// 否则子组件的背景将会是黑色。
 /// 这是一套值得琢磨的组件，因为它的效果真的amazing
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -33,7 +33,7 @@ class SliverAppBarDemo extends StatelessWidget {
             ),
             title: Text("SliverAppBarDemo"),
             actions: <Widget>[
-              FlatButton.icon(
+              TextButton.icon(
                 onPressed: () {
                   Navigator.push(
                     context,

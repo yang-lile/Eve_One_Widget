@@ -2,7 +2,7 @@
 /// 需要我们继承来实现具体效果，本例展示了五角星绘制
 /// _StarCliper类来自互联网
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 import 'dart:math' as Math;

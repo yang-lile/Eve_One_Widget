@@ -32,15 +32,57 @@ enum WidgetNames {
   VALUE_LISTENABLE_BUILDER,
   DRAGGABLE,
   ANIMATED_LIST,
+  FLEXIBLE,
+  MEDIA_QUERY,
+  SPACER,
+  INHERITED_WIDGET,
+  ANIMATED_ICON,
+  ASPECT_RATIO,
+  LIMITED_BOX,
+  PLACEHOLDER,
+  RICH_TEXT,
+  REORDERABLE_LIST_VIEW,
+  ANIMATED_SWITCHER,
+  ANIMATED_POSITIONED,
+  ANIMATED_PADDING,
+  INDEXED_STACK,
+  SEMANTICS,
+  CONSTRAINED_BOX,
+  STACK,
+  ANIMATED_OPACITY,
+  FRACTIONALLY_SIZED_BOX,
+  LIST_VIEW,
+  LIST_TILE,
+  CONTAINER,
+  SELECTABLE_TEXT,
   ABOUT_DIALOG, // 这里是83
+}
+
+enum NewWidgetNames {
+  STACK,
+  ANIMATED_OPACITY,
+  FRACTIONALLY_SIZED_BOX,
+  LIST_VIEW,
+  LIST_TILE,
+  CONTAINER,
+  SELECTABLE_TEXT,
 }
 
 main(List<String> args) {
   for (var i = 0; i < WidgetNames.values.length; i++) {
     String s = WidgetNames.values[i].toString().toLowerCase().split('.').last;
-        s = s[0].toUpperCase() + s.substring(1);
-        s = s.replaceAllMapped(
-            new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
+    s = s[0].toUpperCase() + s.substring(1);
+    s = s.replaceAllMapped(
+        new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
     print("$i. $s");
+  }
+
+  print("1. 新增了新控件：");
+  for (var item in NewWidgetNames.values) {
+    String s = item.toString().toLowerCase().split('.').last;
+    s = s[0].toUpperCase() + s.substring(1);
+    s = s.replaceAllMapped(
+        new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
+    print("$s,");
   }
 }

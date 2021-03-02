@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Eve_One_Widget.iml" filepath="$PROJECT_DIR$/Eve_One_Widget.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/Eve_One_Widget_android.iml" filepath="$PROJECT_DIR$/android/Eve_One_Widget_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eve_one_widget.iml" filepath="$PROJECT_DIR$/eve_one_widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/eve_one_widget_android.iml" filepath="$PROJECT_DIR$/android/eve_one_widget_android.iml" />
     </modules>
   </component>
 </project>

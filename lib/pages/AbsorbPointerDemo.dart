@@ -1,4 +1,4 @@
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class AbsorbPointerDemo extends StatelessWidget {
@@ -6,15 +6,14 @@ class AbsorbPointerDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyScaffold(
       appBarTitle: "AbsorbPointerDemo",
-      body:  Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            _buildPage1(),
-            VerticalDivider(),
-            _buildPage2(),
-          ],
-        ),
-      
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          _buildPage1(),
+          VerticalDivider(),
+          _buildPage2(),
+        ],
+      ),
     );
   }
 
@@ -35,20 +34,20 @@ class AbsorbPointerDemo extends StatelessWidget {
         return Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            FlatButton(
-              onPressed: () => Scaffold.of(context).showSnackBar(
+            TextButton(
+              onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(content: Text("Hello SnackBar")),
               ),
               child: Text("click!"),
             ),
-            OutlineButton(
-              onPressed: () => Scaffold.of(context).showSnackBar(
+            OutlinedButton(
+              onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(content: Text("Hello SnackBar")),
               ),
               child: Text("click!"),
             ),
-            RaisedButton(
-              onPressed: () => Scaffold.of(context).showSnackBar(
+            OutlinedButton(
+              onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(content: Text("Hello SnackBar")),
               ),
               child: Text("click!"),

@@ -1,4 +1,4 @@
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class FloatingActionButtonDemo extends StatelessWidget {
@@ -18,11 +18,9 @@ class FloatingActionButtonDemo extends StatelessWidget {
 
   AppBar _buildAppBar(BuildContext context) {
     return AppBar(
-      title: MyFadeTransition1(
-        child: Text(appBarTitle),
-      ),
+      title: Text(appBarTitle),
       actions: <Widget>[
-        FlatButton.icon(
+        TextButton.icon(
           onPressed: () => Navigator.push(
             context,
             MaterialPageRoute(
@@ -55,15 +53,15 @@ class FloatingActionButtonDemo extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          _flatButton(Icon(Icons.color_lens), "color_lens"),
-          _flatButton(Icon(Icons.content_copy), "content_copy"),
+          _textButton(Icon(Icons.color_lens), "color_lens"),
+          _textButton(Icon(Icons.content_copy), "content_copy"),
         ],
       ),
     );
   }
 
-  FlatButton _flatButton(Icon icon, String string) {
-    return FlatButton(
+  TextButton _textButton(Icon icon, String string) {
+    return TextButton(
       onPressed: () {},
       child: Column(
         mainAxisSize: MainAxisSize.min,

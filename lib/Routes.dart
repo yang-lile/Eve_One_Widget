@@ -1,39 +1,64 @@
-import 'package:Eve_One_Widget/main.dart';
-import 'package:Eve_One_Widget/pages/AboutDialogDemo.dart';
-import 'package:Eve_One_Widget/pages/AbsorbPointerDemo.dart';
-import 'package:Eve_One_Widget/pages/AlignDemo.dart';
-import 'package:Eve_One_Widget/pages/AnimatedBuilderDemo.dart';
-import 'package:Eve_One_Widget/pages/AnimatedContainerDemo.dart';
-import 'package:Eve_One_Widget/pages/AnimatedListDemo.dart';
-import 'package:Eve_One_Widget/pages/BackdropFilterDemo.dart';
-import 'package:Eve_One_Widget/pages/ClipRRectDemo.dart';
-import 'package:Eve_One_Widget/pages/CustomPaintDemo.dart';
-import 'package:Eve_One_Widget/pages/DismissibleDemo.dart';
-import 'package:Eve_One_Widget/pages/DraggableDemo.dart';
-import 'package:Eve_One_Widget/pages/ExpandedDemo.dart';
-import 'package:Eve_One_Widget/pages/FadeInImageDemo.dart';
-import 'package:Eve_One_Widget/pages/FadeTransitionDemo.dart';
-import 'package:Eve_One_Widget/pages/FittedBoxDemo.dart';
-import 'package:Eve_One_Widget/pages/FlexibleDemo.dart';
-import 'package:Eve_One_Widget/pages/FloatingActionButtonDemo.dart';
-import 'package:Eve_One_Widget/pages/FutureBuilderDemo.dart';
-import 'package:Eve_One_Widget/pages/HeroDemo.dart';
-import 'package:Eve_One_Widget/pages/InheritedModelDemo.dart';
-import 'package:Eve_One_Widget/pages/Introduction.dart';
-import 'package:Eve_One_Widget/pages/LayoutBuilderDemo.dart';
-import 'package:Eve_One_Widget/pages/OpacityDemo.dart';
-import 'package:Eve_One_Widget/pages/PageViewDemo.dart';
-import 'package:Eve_One_Widget/pages/PositionedDemo.dart';
-import 'package:Eve_One_Widget/pages/SafeAreaDemo.dart';
-import 'package:Eve_One_Widget/pages/SizedBoxDemo.dart';
-import 'package:Eve_One_Widget/pages/SliverAppBarDemo.dart';
-import 'package:Eve_One_Widget/pages/SliverListAndSliverGridDemo.dart';
-import 'package:Eve_One_Widget/pages/StreamBuilderDemo.dart';
-import 'package:Eve_One_Widget/pages/TableDemo.dart';
-import 'package:Eve_One_Widget/pages/TooltipDemo.dart';
-import 'package:Eve_One_Widget/pages/TransformDemo.dart';
-import 'package:Eve_One_Widget/pages/ValueListenableBuilderDemo.dart';
-import 'package:Eve_One_Widget/pages/WrapDemo.dart';
+import 'package:eve_one_widget/HomePage.dart';
+import 'package:eve_one_widget/pages/AboutDialogDemo.dart';
+import 'package:eve_one_widget/pages/AbsorbPointerDemo.dart';
+import 'package:eve_one_widget/pages/AlertDialogDemo.dart';
+import 'package:eve_one_widget/pages/AlignDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedBuilderDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedContainerDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedIconDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedListDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedOpacityDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedPaddingDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedPositionedDemo.dart';
+import 'package:eve_one_widget/pages/AnimatedSwitcherDemo.dart';
+import 'package:eve_one_widget/pages/AspectRatioDemo.dart';
+import 'package:eve_one_widget/pages/BackdropFilterDemo.dart';
+import 'package:eve_one_widget/pages/ClipRRectDemo.dart';
+import 'package:eve_one_widget/pages/ConstrainedBoxDemo.dart';
+import 'package:eve_one_widget/pages/ContainerDemo.dart';
+import 'package:eve_one_widget/pages/CustomPaintDemo.dart';
+import 'package:eve_one_widget/pages/DataTableDemo.dart';
+import 'package:eve_one_widget/pages/DismissibleDemo.dart';
+import 'package:eve_one_widget/pages/DraggableDemo.dart';
+import 'package:eve_one_widget/pages/ExpandedDemo.dart';
+import 'package:eve_one_widget/pages/FadeInImageDemo.dart';
+import 'package:eve_one_widget/pages/FadeTransitionDemo.dart';
+import 'package:eve_one_widget/pages/FittedBoxDemo.dart';
+import 'package:eve_one_widget/pages/FlexibleDemo.dart';
+import 'package:eve_one_widget/pages/FloatingActionButtonDemo.dart';
+import 'package:eve_one_widget/pages/FractionallySizedBoxDemo.dart';
+import 'package:eve_one_widget/pages/FutureBuilderDemo.dart';
+import 'package:eve_one_widget/pages/HeroDemo.dart';
+import 'package:eve_one_widget/pages/IndexedStackDemo.dart';
+import 'package:eve_one_widget/pages/InheritedModelDemo.dart';
+import 'package:eve_one_widget/pages/InheritedWidgetDemo.dart';
+import 'package:eve_one_widget/pages/Introduction.dart';
+import 'package:eve_one_widget/pages/LayoutBuilderDemo.dart';
+import 'package:eve_one_widget/pages/LimitedBoxDemo.dart';
+import 'package:eve_one_widget/pages/ListTileDemo.dart';
+import 'package:eve_one_widget/pages/ListViewDemo.dart';
+import 'package:eve_one_widget/pages/MediaQueryDemo.dart';
+import 'package:eve_one_widget/pages/OpacityDemo.dart';
+import 'package:eve_one_widget/pages/PageViewDemo.dart';
+import 'package:eve_one_widget/pages/PlaceholderDemo.dart';
+import 'package:eve_one_widget/pages/PositionedDemo.dart';
+import 'package:eve_one_widget/pages/ReorderableListViewDemo.dart';
+import 'package:eve_one_widget/pages/RichTextDemo.dart';
+import 'package:eve_one_widget/pages/SafeAreaDemo.dart';
+import 'package:eve_one_widget/pages/SelectableTextDemo.dart';
+import 'package:eve_one_widget/pages/SemanticsDemo.dart';
+import 'package:eve_one_widget/pages/SizedBoxDemo.dart';
+import 'package:eve_one_widget/pages/SliderDemo.dart';
+import 'package:eve_one_widget/pages/SliverAppBarDemo.dart';
+import 'package:eve_one_widget/pages/SliverListAndSliverGridDemo.dart';
+import 'package:eve_one_widget/pages/SpacerDemo.dart';
+import 'package:eve_one_widget/pages/StackDemo.dart';
+import 'package:eve_one_widget/pages/StreamBuilderDemo.dart';
+import 'package:eve_one_widget/pages/TableDemo.dart';
+import 'package:eve_one_widget/pages/TooltipDemo.dart';
+import 'package:eve_one_widget/pages/TransformDemo.dart';
+import 'package:eve_one_widget/pages/ValueListenableBuilderDemo.dart';
+import 'package:eve_one_widget/pages/WrapDemo.dart';
 import 'package:flutter/material.dart';
 
 final routes = {
@@ -72,6 +97,31 @@ final routes = {
   "/draggable": (context) => DraggableDemo(),
   "/animated_list": (context) => AnimatedListDemo(),
   "/flexible": (context) => FlexibleDemo(),
+  "/media_query": (context) => MediaQueryDemo(),
+  "/spacer": (context) => SpacerDemo(),
+  "/inherited_widget": (context) => InheritedWidgetDemo(),
+  "/animated_icon": (context) => AnimatedIconDemo(),
+  "/aspect_ratio": (context) => AspectRatioDemo(),
+  "/limited_box": (context) => LimitedBoxDemo(),
+  "/placeholder": (context) => PlaceholderDemo(),
+  "/rich_text": (context) => RichTextDemo(),
+  "/reorderable_list_view": (context) => ReorderableListViewDemo(),
+  "/animated_switcher": (context) => AnimatedSwitcherDemo(),
+  "/animated_positioned": (context) => AnimatedPositionedDemo(),
+  "/animated_padding": (context) => AnimatedPaddingDemo(),
+  "/indexed_stack": (context) => IndexedStackDemo(),
+  "/semantics": (context) => SemanticsDemo(),
+  "/constrained_box": (context) => ConstrainedBoxDemo(),
+  "/stack": (context) => StackDemo(),
+  "/animated_opacity": (context) => AnimatedOpacityDemo(),
+  "/fractionally_sized_box": (context) => FractionallySizedBoxDemo(),
+  "/list_view": (context) => ListViewDemo(),
+  "/list_tile": (context) => ListTileDemo(),
+  "/container": (context) => ContainerDemo(),
+  "/selectable_text": (context) => SelectableTextDemo(),
+  "/data_table": (context) => DataTableDemo(),
+  "/slider": (context) => SliderDemo(),
+  "/alert_dialog": (context) => AlertDialogDemo(),
   "/about_dialog": (context) => AboutDialogDemo(),
 };
 

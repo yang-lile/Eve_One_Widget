@@ -1,4 +1,4 @@
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class AboutDialogDemo extends StatelessWidget {
@@ -31,7 +31,7 @@ class AboutDialogDemo extends StatelessWidget {
     return MyScaffold(
       appBarTitle: "AboutDialogDemo",
       body: Center(
-        child: FlatButton(
+        child: TextButton(
             onPressed: () => _showAboutDIalog(context),
             child: Text("showAboutDIalog")),
       ),

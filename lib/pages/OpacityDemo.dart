@@ -1,7 +1,7 @@
 /// 视频中演示了Opacity，十分简单，设置opacity为0即可
 /// 我们来实现AnimatedOpacity
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class OpacityDemo extends StatefulWidget {
@@ -33,7 +33,7 @@ class OpacityState extends State<OpacityDemo> {
               child: Icon(Icons.hourglass_empty),
               onEnd: () => setState(() => _myOpacity = 0.0),
             ),
-            FlatButton(
+            TextButton(
               onPressed: () => setState(() => _myOpacity = 1.0),
               child: Text("Click!"),
             ),

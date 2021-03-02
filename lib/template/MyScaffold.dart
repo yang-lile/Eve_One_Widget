@@ -1,3 +1,4 @@
+import 'package:eve_one_widget/codeviewer/prehighlighter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -5,22 +6,25 @@ class MyScaffold extends StatelessWidget {
   final String appBarTitle;
   final Widget body;
   final Widget floatingActionButton;
+  final Widget dialogContext;
 
   MyScaffold({
     @required this.appBarTitle,
     @required this.body,
     this.floatingActionButton,
+    this.dialogContext,
   });
 
   @override
   Widget build(BuildContext context) {
+    if (dialogContext != null) {
+      _showDialog(context);
+    }
     return Scaffold(
       appBar: AppBar(
-        title: MyFadeTransition1(
-          child: Text(appBarTitle),
-        ),
+        title: Text(appBarTitle),
         actions: <Widget>[
-          FlatButton.icon(
+          TextButton.icon(
             onPressed: () {
               Navigator.push(
                 context,
@@ -38,11 +42,33 @@ class MyScaffold extends StatelessWidget {
       floatingActionButton: floatingActionButton ?? null,
     );
   }
+
+  void _showDialog(BuildContext context) {
+    // TODO: 曲线救国的方法
+    Future.delayed(
+      Duration(milliseconds: 50),
+      () => showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          content: dialogContext,
+          title: Text("学习提示"),
+          actions: <Widget>[
+            TextButton(
+              child: Text(
+                "了解",
+                style: TextStyle(color: Colors.blue),
+              ),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 class SourceCodePage extends StatelessWidget {
   final String title;
-
   SourceCodePage({
     @required this.title,
   });
@@ -51,28 +77,27 @@ class SourceCodePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Source Code")),
-      body: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Align(
-          alignment: Alignment.center,
-          child: _buildFutureBuilder(),
+      body: Container(
+        color: Colors.black,
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: <Widget>[
+            _buildFutureBuilder(context),
+          ],
         ),
       ),
     );
   }
 
-  FutureBuilder<String> _buildFutureBuilder() {
+  // 生成带有代码高亮的代码
+  FutureBuilder<List<TextSpan>> _buildFutureBuilder(BuildContext context) {
     return FutureBuilder(
       future: _showCode(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          return SelectableText(
-            snapshot.data,
-            style: TextStyle(
-              color: Colors.black,
-            ),
-            toolbarOptions: ToolbarOptions(copy: true, selectAll: true),
-          );
+          return SelectableText.rich(TextSpan(
+            children: snapshot.data,
+          ));
         } else {
           return CircularProgressIndicator();
         }
@@ -80,50 +105,17 @@ class SourceCodePage extends StatelessWidget {
     );
   }
 
-  Future<String> _showCode() {
-    String _string = "lib/pages/${this.title}.dart";
-    return rootBundle.loadString(_string);
-  }
-}
-
-class MyFadeTransition1 extends StatefulWidget {
-  final Widget child;
-
-  MyFadeTransition1({@required this.child});
-
-  @override
-  _MyFadeTransition1State createState() => _MyFadeTransition1State();
-}
-
-class _MyFadeTransition1State extends State<MyFadeTransition1>
-    with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      duration: Duration(milliseconds: 500),
-      vsync: this,
-    );
-    Tween(
-      begin: 0.0,
-      end: 1.0,
-    ).animate(_controller);
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    _controller.forward();
-    return FadeTransition(
-      opacity: _controller,
-      child: widget.child,
-    );
+  Future<List<TextSpan>> _showCode() async {
+    final _string = "lib/pages/${this.title}.dart";
+    final content = await rootBundle.loadString(_string);
+    final _codes = content.split('\n');
+    List<TextSpan> _spanedCodes = [];
+    for (var _code in _codes) {
+      _spanedCodes.addAll(DartSyntaxPrehighlighter().format(_code));
+      _spanedCodes.add(TextSpan(
+        text: "\n",
+      ));
+    }
+    return _spanedCodes;
   }
 }

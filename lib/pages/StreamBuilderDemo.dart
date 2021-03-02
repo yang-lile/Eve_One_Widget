@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class StreamBuilderDemo extends StatelessWidget {
@@ -49,7 +49,7 @@ class StreamBuilderDemo extends StatelessWidget {
 
   Padding _buildRaisedButton(int i) => Padding(
       padding: EdgeInsets.all(10.0),
-      child: RaisedButton(
+      child: ElevatedButton(
         onPressed: () => _textDataController.add(i),
         child: Text("$i"),
       ));

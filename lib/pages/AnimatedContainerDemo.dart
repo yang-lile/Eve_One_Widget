@@ -26,7 +26,7 @@
 /// 你也可以指定一个非线性的自定义效果。
 /// 这就是balabalabala。。。
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedContainerDemo extends StatefulWidget {

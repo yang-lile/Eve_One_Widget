@@ -1,7 +1,7 @@
 /// 主要用于专场动画，
 /// 你可以直接复制粘贴FadeTransionDemoModel来修改属于你的转场动画
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class FadeTransitionDemo extends StatelessWidget {
@@ -11,7 +11,7 @@ class FadeTransitionDemo extends StatelessWidget {
       appBarTitle: "FadeTransitionDemo",
       body: Align(
         alignment: Alignment.center,
-        child: FadeTransitionDemoModel(
+        child: _FadeTransitionTest(
           child: Container(
             color: Colors.yellow[500],
             width: 200.0,
@@ -23,17 +23,16 @@ class FadeTransitionDemo extends StatelessWidget {
   }
 }
 
-class FadeTransitionDemoModel extends StatefulWidget {
+class _FadeTransitionTest extends StatefulWidget {
   final Widget child;
 
-  FadeTransitionDemoModel({@required this.child});
+  _FadeTransitionTest({@required this.child});
 
   @override
-  _FadeTransitionDemoModelState createState() =>
-      _FadeTransitionDemoModelState();
+  _FadeTransitionTestState createState() => _FadeTransitionTestState();
 }
 
-class _FadeTransitionDemoModelState extends State<FadeTransitionDemoModel>
+class _FadeTransitionTestState extends State<_FadeTransitionTest>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
 

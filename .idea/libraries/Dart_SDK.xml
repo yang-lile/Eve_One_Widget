@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Dart SDK">
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$PROJECT_DIR$/../../local/flutter/flutter/bin/cache/dart-sdk/lib/async" />
       <root url="file://$PROJECT_DIR$/../../local/flutter/flutter/bin/cache/dart-sdk/lib/collection" />
       <root url="file://$PROJECT_DIR$/../../local/flutter/flutter/bin/cache/dart-sdk/lib/convert" />
@@ -12,6 +13,19 @@
       <root url="file://$PROJECT_DIR$/../../local/flutter/flutter/bin/cache/dart-sdk/lib/math" />
       <root url="file://$PROJECT_DIR$/../../local/flutter/flutter/bin/cache/dart-sdk/lib/mirrors" />
       <root url="file://$PROJECT_DIR$/../../local/flutter/flutter/bin/cache/dart-sdk/lib/typed_data" />
+=======
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/async" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/collection" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/convert" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/core" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/developer" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/html" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/io" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/isolate" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/math" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/mirrors" />
+      <root url="file://$PROJECT_DIR$/../../../local/flutter/flutter/bin/cache/dart-sdk/lib/typed_data" />
+>>>>>>> 61ec24ad536cc4a2ebca9675e118de28daea4b8c
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,10 +1,11 @@
 /// 讲道理本应该全部更新的控件树
-/// 现在只根据InheritedModel来更新数据
-/// 
+/// 现在只根据`InheritedModel`来更新数据
+/// `InheritedModel`的好处是可以根据需求，局部更新数据
+///
 /// 当然，现在我们使用各种状态管理插件
-/// 而不再使用这一套操作，所以InheritedModel也可以只做了解
+/// 而不再使用这一套操作，所以`InheritedModel`也可以只做了解
 
-import 'package:Eve_One_Widget/template/MyScaffold.dart';
+import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class InheritedModelDemo extends StatefulWidget {
@@ -13,26 +14,34 @@ class InheritedModelDemo extends StatefulWidget {
 }
 
 class _InheritedModelDemoState extends State<InheritedModelDemo> {
-  int data = 0;
+  int data1 = 0;
+  int data2 = 0;
+
   @override
   Widget build(BuildContext context) {
     return MyScaffold(
-      appBarTitle: "InheritedModel",
+      appBarTitle: "InheritedModelDemo",
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          // 尝试只传入需要的数据，可行
           DataModel(
-            number: data,
+            number1: data1,
+            // number2: data2,
             child: ChildWidget1(),
           ),
-          ChildWidget2(),
-          RaisedButton(
-            onPressed: () => setState(() => ++data),
-            child: Text("++data"),
+          DataModel(
+            // number1: data1,
+            number2: data2,
+            child: ChildWidget2(),
           ),
-          RaisedButton(
-            onPressed: () => setState(() => --data),
-            child: Text("--data"),
+          ElevatedButton (
+            onPressed: () => setState(() => ++data1),
+            child: Text("++data1"),
+          ),
+          ElevatedButton (
+            onPressed: () => setState(() => ++data2),
+            child: Text("++data2"),
           ),
         ],
       ),
@@ -48,12 +57,16 @@ class ChildWidget1 extends StatefulWidget {
 class _ChildWidget1State extends State<ChildWidget1> {
   @override
   Widget build(BuildContext context) {
-    final data = context.dependOnInheritedWidgetOfExactType<DataModel>();
+    final data = InheritedModel.inheritFrom<DataModel>(
+      context,
+      aspect: 100,
+    );
     return Center(
-      child: Text("${data.number}"),
+      child: Text("data1:${data.number1}"),
     );
   }
 
+  // 检测是否更新
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -69,9 +82,17 @@ class ChildWidget2 extends StatefulWidget {
 class _ChildWidget2State extends State<ChildWidget2> {
   @override
   Widget build(BuildContext context) {
-    return Text("please click raise button...");
+    final data = InheritedModel.inheritFrom<DataModel>(
+      context,
+      aspect: 200,
+    );
+
+    return Center(
+      child: Text("data2:${data.number2}"),
+    );
   }
 
+  // 检测是否更新
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -79,16 +100,29 @@ class _ChildWidget2State extends State<ChildWidget2> {
   }
 }
 
-class DataModel extends InheritedWidget {
-  final int number;
+/// `InheritedModel`后的类型，和`updateShouldNotifyDependent`中的`dependencies`的类型一致
+class DataModel extends InheritedModel<int> {
+  final int number1;
+  final int number2;
 
-  DataModel({
-    this.number,
+  const DataModel({
+    this.number1,
+    this.number2,
     Widget child,
   }) : super(child: child);
 
   @override
-  bool updateShouldNotify(DataModel oldWidget) {
-    return oldWidget.number != number;
+  bool updateShouldNotifyDependent(DataModel oldWidget, Set<int> dependencies) {
+    /// 对应的，`dependencies.contains`的类型也需要用
+    if (dependencies.contains(100) && number1 != oldWidget.number1) {
+      return true;
+    } else if (dependencies.contains(200) && number2 != oldWidget.number2) {
+      return true;
+    }
+    return false;
   }
+
+  @override
+  bool updateShouldNotify(DataModel oldWidget) =>
+      oldWidget.number1 != number1 || oldWidget.number2 != number2;
 }

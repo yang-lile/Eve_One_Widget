@@ -1,4 +1,4 @@
-# Eve_One_Widget-
+# Eve_One_Widget
 
 用最好的代码实现每一个flutter widget。
 
@@ -36,7 +36,30 @@
 30. ValueListenableBuilder
 31. Draggable
 32. AnimatedList
-33. AboutDialog
+33. Flexible
+34. MediaQuery
+35. Spacer
+36. InheritedWidget
+37. AnimatedIcon
+38. AspectRatio
+39. LimitedBox
+40. Placeholder
+41. RichText
+42. ReorderableListView
+43. AnimatedSwitcher * 
+44. AnimatedPositioned
+45. AnimatedPadding
+46. IndexedStack
+47. Semantics
+48. ConstrainedBox
+49. Stack
+50. AnimatedOpacity
+51. FractionallySizedBox
+52. ListView
+53. ListTile
+54. Container
+55. SelectableText
+56. AboutDialog
 
 ## 每次更新需要修改的位置
 
@@ -48,7 +71,19 @@
 5. 修改`lib\main.dart`里`_MyHomePageState`类里的`subtitlesIndex`子标题属性，注意下标
 
 ## 打包注意
+
 1. 设置联网权限
 
 ## 待解决问题
+
 1. `lib\pages\SliverAppBarDemo.dart`的图片高度获取的实现
+
+## 风格突变
+
+由于学习了新的使用方法，动画将更加流畅从AnimatedPositioned开始将使用一些令人舒适的动画效果，当然也伴随着较高成本的学习量，希望您能更上学习节奏
+
+## 备注
+安卓打包命令：
+```cmd
+> flutter build apk --split-per-abi
+```
