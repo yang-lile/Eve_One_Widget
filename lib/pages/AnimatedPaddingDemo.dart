@@ -13,7 +13,7 @@ class AnimatedPaddingDemo extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border.all(
               width: 1,
-              color: Colors.green[600],
+              color: Colors.green[600]!,
             ),
           ),
           child: _JumpHeart(),
@@ -29,7 +29,7 @@ class _JumpHeart extends StatefulWidget {
 }
 
 class __JumpHeartState extends State<_JumpHeart> {
-  bool _padding;
+  late bool _padding;
 
   @override
   void initState() {

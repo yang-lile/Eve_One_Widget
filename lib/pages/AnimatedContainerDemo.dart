@@ -30,7 +30,7 @@ import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedContainerDemo extends StatefulWidget {
-  AnimatedContainerDemo({Key key}) : super(key: key);
+  AnimatedContainerDemo({Key? key}) : super(key: key);
 
   @override
   _AnimatedContainerDemoState createState() => _AnimatedContainerDemoState();

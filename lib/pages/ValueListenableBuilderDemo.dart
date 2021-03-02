@@ -9,7 +9,7 @@ import 'package:eve_one_widget/template/MyScaffold.dart';
 import 'package:flutter/material.dart';
 
 class ValueListenableBuilderDemo extends StatelessWidget {
-  final ValueNotifier _valueNotifier = ValueNotifier<int>(0);
+  final ValueNotifier<int> _valueNotifier = ValueNotifier<int>(0);
   final Random _random = Random();
 
   @override
@@ -19,7 +19,7 @@ class ValueListenableBuilderDemo extends StatelessWidget {
       body: Center(
         child: ValueListenableBuilder(
           valueListenable: _valueNotifier,
-          builder: (BuildContext context, dynamic value, Widget child) {
+          builder: (BuildContext context, dynamic value, Widget? child) {
             return Table(
               children: [
                 TableRow(
@@ -53,9 +53,7 @@ class ValueListenableBuilderDemo extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.refresh),
-        onPressed: () {
-          return _valueNotifier.value = _random.nextInt(9999);
-        },
+        onPressed: () => _valueNotifier.value = _random.nextInt(9999),
       ),
     );
   }

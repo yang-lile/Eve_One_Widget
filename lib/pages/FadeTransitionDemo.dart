@@ -26,7 +26,7 @@ class FadeTransitionDemo extends StatelessWidget {
 class _FadeTransitionTest extends StatefulWidget {
   final Widget child;
 
-  _FadeTransitionTest({@required this.child});
+  _FadeTransitionTest({required this.child});
 
   @override
   _FadeTransitionTestState createState() => _FadeTransitionTestState();
@@ -34,7 +34,7 @@ class _FadeTransitionTest extends StatefulWidget {
 
 class _FadeTransitionTestState extends State<_FadeTransitionTest>
     with SingleTickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   void initState() {

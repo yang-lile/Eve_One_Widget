@@ -56,7 +56,7 @@ class ClipRRectDemo extends StatelessWidget {
 }
 
 class _StarCliper extends CustomClipper<Path> {
-  final double radius;
+  final double? radius;
 
   _StarCliper({this.radius});
 
@@ -67,7 +67,7 @@ class _StarCliper extends CustomClipper<Path> {
 
   @override
   Path getClip(Size size) {
-    double radius = this.radius;
+    double radius = this.radius!;
     Path path = new Path();
     double radian = degree2Radian(36); // 36为五角星的角度
     double radiusIn =

@@ -60,7 +60,7 @@ class _ChildWidget1State extends State<ChildWidget1> {
     final data = InheritedModel.inheritFrom<DataModel>(
       context,
       aspect: 100,
-    );
+    )!;
     return Center(
       child: Text("data1:${data.number1}"),
     );
@@ -85,7 +85,7 @@ class _ChildWidget2State extends State<ChildWidget2> {
     final data = InheritedModel.inheritFrom<DataModel>(
       context,
       aspect: 200,
-    );
+    )!;
 
     return Center(
       child: Text("data2:${data.number2}"),
@@ -102,13 +102,13 @@ class _ChildWidget2State extends State<ChildWidget2> {
 
 /// `InheritedModel`后的类型，和`updateShouldNotifyDependent`中的`dependencies`的类型一致
 class DataModel extends InheritedModel<int> {
-  final int number1;
-  final int number2;
+  final int? number1;
+  final int? number2;
 
   const DataModel({
     this.number1,
     this.number2,
-    Widget child,
+    required Widget child,
   }) : super(child: child);
 
   @override

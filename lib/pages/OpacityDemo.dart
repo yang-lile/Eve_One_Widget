@@ -10,7 +10,7 @@ class OpacityDemo extends StatefulWidget {
 }
 
 class OpacityState extends State<OpacityDemo> {
-  var _myOpacity;
+  late var _myOpacity;
   var _myDuration = Duration(milliseconds: 500);
   @override
   void initState() {

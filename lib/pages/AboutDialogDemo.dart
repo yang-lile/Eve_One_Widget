@@ -8,7 +8,7 @@ class AboutDialogDemo extends StatelessWidget {
       applicationIcon: FlutterLogo(
         size: 200,
         style: FlutterLogoStyle.horizontal,
-        textColor: Colors.red[400],
+        textColor: Colors.red[400]!,
       ),
       applicationName: "WOW",
       applicationVersion: "0.0.1",

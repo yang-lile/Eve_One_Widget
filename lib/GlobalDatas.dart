@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-GlobalDatas globalDatas;
+GlobalDatas? globalDatas;
 
 class GlobalDatas extends InheritedModel<String> {
   GlobalDatas({
@@ -12,24 +12,22 @@ class GlobalDatas extends InheritedModel<String> {
     this.punctuationStyle,
     this.classStyle,
     this.constantStyle,
-    Key key,
-    this.child,
+    Key? key,
   }) : super(
           key: key,
-          child: child,
+          child: SizedBox(),
         );
 
-  final Widget child;
-  final TextStyle baseStyle;
-  final TextStyle numberStyle;
-  final TextStyle commentStyle;
-  final TextStyle keywordStyle;
-  final TextStyle stringStyle;
-  final TextStyle punctuationStyle;
-  final TextStyle classStyle;
-  final TextStyle constantStyle;
+  final TextStyle? baseStyle;
+  final TextStyle? numberStyle;
+  final TextStyle? commentStyle;
+  final TextStyle? keywordStyle;
+  final TextStyle? stringStyle;
+  final TextStyle? punctuationStyle;
+  final TextStyle? classStyle;
+  final TextStyle? constantStyle;
 
-  static GlobalDatas of(BuildContext context) {
+  static GlobalDatas? of(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<GlobalDatas>();
   }
 

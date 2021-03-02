@@ -29,7 +29,7 @@ class _AnimatedListDemoState extends State<AnimatedListDemo> {
                 // 删除的时候需要提前保存数据
                 // 不然调用`removeItem`方法后，无法访问到`index`的数据
                 String data = listData[index].toString();
-                _listKey.currentState.removeItem(
+                _listKey.currentState!.removeItem(
                   index,
                   (context, animation) {
                     // 删除要返回一个控件及其动画
@@ -54,7 +54,7 @@ class _AnimatedListDemoState extends State<AnimatedListDemo> {
           int index = listData.length;
           // 顺序可以颠倒，但是index必须唯一
           listData.insert(index, random.nextInt(3000));
-          _listKey.currentState.insertItem(index);
+          _listKey.currentState!.insertItem(index);
         },
       ),
     );

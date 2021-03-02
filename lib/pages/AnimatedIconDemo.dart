@@ -8,7 +8,7 @@ class AnimatedIconDemo extends StatefulWidget {
 
 class _AnimatedIconDemoState extends State<AnimatedIconDemo>
     with SingleTickerProviderStateMixin {
-  AnimationController controller;
+  late AnimationController controller;
   @override
   void initState() {
     super.initState();

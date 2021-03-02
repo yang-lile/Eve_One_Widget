@@ -51,7 +51,7 @@ class TransformDemo extends StatelessWidget {
 }
 
 class _PeachPainter extends CustomPainter {
-  final Paint _paint = Paint()..color = Colors.red[400];
+  final Paint _paint = Paint()..color = Colors.red[400]!;
   @override
   void paint(Canvas canvas, Size size) {
     double w = size.width / 3;

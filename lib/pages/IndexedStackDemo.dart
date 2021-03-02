@@ -19,7 +19,7 @@ class _IndexedStack extends StatefulWidget {
 }
 
 class __IndexedStackState extends State<_IndexedStack> {
-  int index;
+  int? index;
   List colors = [
     Colors.red,
     Colors.orange,
@@ -42,7 +42,7 @@ class __IndexedStackState extends State<_IndexedStack> {
           Material(
             color: colors[i][300],
             child: InkWell(
-              onTap: () => setState(() => index = (index + 1) % 4),
+              onTap: () => setState(() => index = (index! + 1) % 4),
               child: Container(
                 width: 200.0,
                 height: 200.0,

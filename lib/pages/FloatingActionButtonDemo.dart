@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class FloatingActionButtonDemo extends StatelessWidget {
   final String appBarTitle = "FloatingActionButtonDemo";
-  final Widget body = null;
+  final Widget? body = null;
 
   @override
   Widget build(BuildContext context) {

@@ -26,8 +26,8 @@ class _MyAnimated extends StatefulWidget {
 class __MyAnimatedState extends State<_MyAnimated>
     with SingleTickerProviderStateMixin {
   // 需要导入`SingleTickerProviderStateMixin`实现不超过该控件的边界
-  Animation animation;
-  AnimationController controller;
+  late Animation animation;
+  late AnimationController controller;
   Widget child = FlutterLogo();
   @override
   void initState() {
@@ -65,7 +65,7 @@ class __MyAnimatedState extends State<_MyAnimated>
         // 构建一个动画，原理是生成函数里生成一帧的样式
         // 通过`AnimatedBuilder`播放下一帧
         animation: animation,
-        builder: (BuildContext context, Widget child) {
+        builder: (BuildContext context, Widget? child) {
           return Container(
             width: 200.0,
             height: 200.0,

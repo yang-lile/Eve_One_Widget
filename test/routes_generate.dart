@@ -7,7 +7,7 @@ main(List<String> args) {
     String s = i.toString().toLowerCase().split('.').last;
     s = s[0].toUpperCase() + s.substring(1);
     s = s.replaceAllMapped(
-        new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
+        new RegExp(r"_\w"), (match) => match.group(0)!.toUpperCase()[1]);
     print(
         "\"/${i.toString().toLowerCase().split('.').last}\" : (context) => ${s}Demo(),");
   }

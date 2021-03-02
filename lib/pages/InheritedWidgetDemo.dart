@@ -42,7 +42,7 @@ class ChildWidget1 extends StatefulWidget {
 class _ChildWidget1State extends State<ChildWidget1> {
   @override
   Widget build(BuildContext context) {
-    final data = context.dependOnInheritedWidgetOfExactType<DataModel>();
+    final data = context.dependOnInheritedWidgetOfExactType<DataModel>()!;
     return Center(
       child: Text("${data.number}"),
     );
@@ -74,11 +74,11 @@ class _ChildWidget2State extends State<ChildWidget2> {
 }
 
 class DataModel extends InheritedWidget {
-  final int number;
+  final int? number;
 
   DataModel({
     this.number,
-    Widget child,
+    required Widget child,
   }) : super(child: child);
 
   @override

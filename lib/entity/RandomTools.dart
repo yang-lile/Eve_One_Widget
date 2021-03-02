@@ -17,7 +17,7 @@ class RandomTools {
   }
 
   static randomNumber({int len = 1}) {
-    return Random().nextInt(pow(10, len - 1)) +
+    return Random().nextInt(pow(10, len - 1) as int) +
         (Random().nextInt(8) + 1) * pow(10, len);
   }
 }

@@ -92,7 +92,7 @@ class ConstrainedBoxDemo extends StatelessWidget {
           width: screenW / 10,
           height: screenW / 10,
           decoration: BoxDecoration(
-            color: Colors.blue[100 * _messeges[index].id + 100],
+            color: Colors.blue[100 * _messeges[index].id! + 100],
             borderRadius: BorderRadius.all(Radius.circular(screenW / 20)),
           ),
           child: InkWell(
@@ -128,7 +128,7 @@ class ConstrainedBoxDemo extends StatelessWidget {
           constraints: BoxConstraints(maxWidth: screenW * 7 / 10),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(_messeges[index].message),
+            child: Text(_messeges[index].message!),
           ),
         ),
       ),
@@ -137,7 +137,7 @@ class ConstrainedBoxDemo extends StatelessWidget {
 }
 
 class _Message {
-  int id;
-  String message;
+  int? id;
+  String? message;
   _Message({this.id, this.message});
 }

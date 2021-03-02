@@ -5,12 +5,12 @@ import 'package:flutter/services.dart';
 class MyScaffold extends StatelessWidget {
   final String appBarTitle;
   final Widget body;
-  final Widget floatingActionButton;
-  final Widget dialogContext;
+  final Widget? floatingActionButton;
+  final Widget? dialogContext;
 
   MyScaffold({
-    @required this.appBarTitle,
-    @required this.body,
+    required this.appBarTitle,
+    required this.body,
     this.floatingActionButton,
     this.dialogContext,
   });
@@ -70,7 +70,7 @@ class MyScaffold extends StatelessWidget {
 class SourceCodePage extends StatelessWidget {
   final String title;
   SourceCodePage({
-    @required this.title,
+    required this.title,
   });
 
   @override

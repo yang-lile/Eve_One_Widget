@@ -7,10 +7,10 @@ import 'package:flutter/material.dart';
 
 class Grades {
   Grades({
-    @required this.name,
-    @required this.chinese,
-    @required this.english,
-    @required this.math,
+    required this.name,
+    required this.chinese,
+    required this.english,
+    required this.math,
   });
   String name;
   int chinese;
@@ -35,7 +35,7 @@ class _DataTableDemoState extends State<DataTableDemo> {
     Grades(name: "null", chinese: 0, english: 0, math: 0),
   ];
   bool _ascending = true;
-  int _columnIndex;
+  int? _columnIndex;
   @override
   Widget build(BuildContext context) {
     return MyScaffold(

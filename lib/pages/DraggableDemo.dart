@@ -17,7 +17,7 @@ class DraggableDemo extends StatelessWidget {
 class _SuspendedBall extends StatefulWidget {
   final Widget child;
 
-  const _SuspendedBall({Key key, this.child}) : super(key: key);
+  const _SuspendedBall({Key? key, required this.child}) : super(key: key);
 
   @override
   _SuspendedBallState createState() => _SuspendedBallState();
@@ -44,14 +44,14 @@ class _SuspendedBallState extends State<_SuspendedBall> {
     double w = MediaQuery.of(context).size.width - ballSize;
 
     return Stack(
-      children: <Widget>[
+      children: [
         AnimatedPositioned(
           top: _offset.dy,
           left: _offset.dx,
           duration: Duration(milliseconds: duration),
           child: Draggable(
             // 我们要做悬浮球，只能有一个实体
-            maxSimultaneousDrags: 1, 
+            maxSimultaneousDrags: 1,
             // 拖动的
             feedback: CustomPaint(
               painter: _BallPainter(),
@@ -76,7 +76,7 @@ class _SuspendedBallState extends State<_SuspendedBall> {
                 );
               });
               // 延迟执行靠边操作
-              Future.delayed(Duration(milliseconds:50)).then(
+              Future.delayed(Duration(milliseconds: 50)).then(
                 (value) => {
                   if (_offset.dx != 0 || _offset.dx != w)
                     {
@@ -105,7 +105,7 @@ class _SuspendedBallState extends State<_SuspendedBall> {
 // 绘制球球，可以自己用图片代替
 class _BallPainter extends CustomPainter {
   Paint _paint1 = Paint()..color = Colors.white70;
-  Paint _paint2 = Paint()..color = Colors.blueGrey[300];
+  Paint _paint2 = Paint()..color = Colors.blueGrey[300]!;
 
   @override
   void paint(Canvas canvas, Size size) {

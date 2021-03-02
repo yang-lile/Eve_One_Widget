@@ -38,7 +38,7 @@ class _Mask extends StatefulWidget {
 }
 
 class __MaskState extends State<_Mask> {
-  bool _top;
+  late bool _top;
   @override
   void initState() {
     super.initState();

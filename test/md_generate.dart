@@ -73,7 +73,7 @@ main(List<String> args) {
     String s = WidgetNames.values[i].toString().toLowerCase().split('.').last;
     s = s[0].toUpperCase() + s.substring(1);
     s = s.replaceAllMapped(
-        new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
+        new RegExp(r"_\w"), (match) => match.group(0)!.toUpperCase()[1]);
     print("$i. $s");
   }
 
@@ -82,7 +82,7 @@ main(List<String> args) {
     String s = item.toString().toLowerCase().split('.').last;
     s = s[0].toUpperCase() + s.substring(1);
     s = s.replaceAllMapped(
-        new RegExp(r"_\w"), (match) => match.group(0).toUpperCase()[1]);
+        new RegExp(r"_\w"), (match) => match.group(0)!.toUpperCase()[1]);
     print("$s,");
   }
 }
